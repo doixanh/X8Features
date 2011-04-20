@@ -1,0 +1,29 @@
+#!/system/bin/sh
+
+cd /sdcard/netfilter/
+
+insmod netfilter.ko
+
+insmod x_tables.ko
+
+for i in `ls xt_*`
+do
+	insmod $i
+done
+
+insmod ipv4_netfilter.ko
+
+
+for i in `ls nf*`
+do
+	insmod $i
+done
+
+insmod ip_tables.ko
+
+for i in `ls ipt_*`
+do
+	insmod $i
+done
+
+insmod iptable_filter.ko

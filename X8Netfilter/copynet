@@ -1,0 +1,2 @@
+#!/bin/bash
+find net -name *.ko -exec adb push {} /sdcard/netfilter \;
