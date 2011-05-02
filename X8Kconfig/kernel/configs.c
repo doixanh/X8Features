@@ -124,7 +124,7 @@ static int __init ikconfig_init(void)
 	// get original kernel_config_data
 	kernel_config_data_dx = (void*) kallsyms_lookup_name_dx("kernel_config_data");
 	
-	printk("X8Kconfig: module loaded. Build target: " DEVICE_NAME);
+	printk("X8Kconfig: v001. module loaded. Build target: " DEVICE_NAME);
 	printk("X8Kconfig: config.gz start at %X,size %d", (int) kernel_config_data_dx, kernel_config_data_size);
 	
 	/* create the current config file */
