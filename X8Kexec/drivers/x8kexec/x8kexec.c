@@ -90,6 +90,11 @@ void machine_kexec_custom(struct kimage *image)
 	*kexec_indirection_page_dx = page_list;
 	*kexec_mach_type_dx = machine_arch_type;
 	*kexec_boot_atags_dx = image->start - KEXEC_ARM_ZIMAGE_OFFSET + KEXEC_ARM_ATAGS_OFFSET;
+	
+	printk(KERN_INFO "start=%8lx, inpage=%8lx, machtype=%8lx, atag=%8lx\n", 
+		*kexec_start_address_dx, *kexec_indirection_page_dx,
+		*kexec_mach_type_dx, *kexec_boot_atags_dx);
+	
 
 	/* copy our kernel relocation code to the control code page */
 	memcpy(reboot_code_buffer,
@@ -135,7 +140,7 @@ static int __init x8kexec_init(void)
 
 #ifdef X8
 	// get original vars/functions
-	lookup_func(machine_kexec);
+	//lookup_func(machine_kexec);
 	lookup_func(machine_kexec);
 	lookup_func(setup_mm_for_kdump);
 	lookup_func(append_crash_params_cmdline);
