@@ -1,0 +1,14 @@
+#
+# X8OC module configuration
+#
+
+config X8_KEXEC
+	tristate "X8 kexec"
+	help
+	  Say Y here if you want to build a module to fix kexec for X8
+
+	  If unsure, say N.
+
+	  To compile this module, choose M here: the
+	  module will be called x8kexec.
+
