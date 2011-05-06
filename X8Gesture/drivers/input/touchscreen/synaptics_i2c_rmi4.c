@@ -25,11 +25,12 @@
 #include <asm/uaccess.h>
 
 // dx : defines
-#define DX_MODULE_VER			"v005"
+#define DX_MODULE_VER			"v006"
 #define DX_MODULE_NAME			"x8gesture"
 #define W_THRESHOLD			150
 #define W_THRESHOLD_ZOOM_IN		350
 #define W_THRESHOLD_LARGE_ZOOM_OUT	150
+#define W_NO_ZOOM			20
 #define D_STABLE_THRESHOLD		80000
 #define D_TWO_FINGER_THRESHOLD	150000
 #define D_THRESHOLD_ZOOM_IN		160*120*4
@@ -446,14 +447,14 @@ static void synaptics_2D_data_handler(struct synaptics_ts_data *ts)
 	
 	//SYNA_DBG(printk(KERN_INFO "%s: x=%4d y=%4d w=%3d, wx=%3d, wy=%3d\n", __FUNCTION__, x8gdata.prev_x, x8gdata.prev_y, w, wx, wy);)
 
-	// v005
+	// v006
 	if (x8gdata.finger <= 1) {
 		// very very big touch?
 		if (w > W_THRESHOLD_LARGE_ZOOM_OUT && 
-		    (x8gdata.prev_x <= ts->info_2D.max_x / 5 || x8gdata.prev_x >= 4 * ts->info_2D.max_x / 5 ||	// check at the borders...
+		    (x8gdata.prev_x <= ts->info_2D.max_x / 5 || x8gdata.prev_x >= 4 * ts->info_2D.max_x / 5 ||	// are we around the the borders?
 		     x8gdata.prev_y <= ts->info_2D.max_y / 5 || x8gdata.prev_y >= 4 * ts->info_2D.max_y / 5)) {
 			x8gdata.num_stable_event++;
-			if (x8gdata.num_stable_event >= 6) {
+			if (x8gdata.num_stable_event >= 5) {
 				// zoom out at the center
 				x8gdata.center_x = ts->info_2D.max_x / 2;
 				x8gdata.center_y = ts->info_2D.max_y / 2;
@@ -467,10 +468,10 @@ static void synaptics_2D_data_handler(struct synaptics_ts_data *ts)
 				x8gdata.send_event = 0;
 			}
 		}
-		else 
+		else 	// no, at the center
 			if (w > W_THRESHOLD) {
 				x8gdata.num_stable_event++;
-				if (x8gdata.num_stable_event > 8) {
+				if (x8gdata.num_stable_event > 5) {
 					// big touch?
 					if (w > W_THRESHOLD_ZOOM_IN) {				// too big touch, it's a zoom out!
 						x8gdata.center_x = ts->info_2D.max_x / 2;	// zoom out at the center
@@ -506,9 +507,18 @@ static void synaptics_2D_data_handler(struct synaptics_ts_data *ts)
 	}
 
 	if (x8gdata.finger >= 3) {
-		dx2 = f_data[0].x - x8gdata.fakex;
-		dy2 = f_data[0].y - x8gdata.fakey;
-		d2 = dx2*dx2 + dy2*dy2;
+		// check for no more zoom
+		if (w < W_NO_ZOOM) {
+			// we have one finger only
+			x8gdata.finger = 1;
+			x8gdata.send_event = 1;
+			x8gdata.state = 0;
+		}
+		else {
+			dx2 = f_data[0].x - x8gdata.fakex;
+			dy2 = f_data[0].y - x8gdata.fakey;
+			d2 = dx2*dx2 + dy2*dy2;
+		}
 	}
 	
 	//SYNA_DBG(printk(KERN_INFO "%s: w=%3d, d=%8d, d2=%d, dx2=f=%d\n", __FUNCTION__, w, d, d2, x8gdata.finger);)
@@ -613,6 +623,12 @@ static void synaptics_2D_data_handler(struct synaptics_ts_data *ts)
 		// calculate position for first saved finger
 		x8gdata.fakex = x8gdata.center_x * 2 - f_data[0].x;
 		x8gdata.fakey = x8gdata.center_y * 2 - f_data[0].y;
+		
+		// recheck fakex and fakey values
+		if (x8gdata.fakex < 0) x8gdata.fakex = 0;
+		if (x8gdata.fakey < 0) x8gdata.fakey = 0;
+		if (x8gdata.fakex > ts->info_2D.max_x) x8gdata.fakex = ts->info_2D.max_x;
+		if (x8gdata.fakey > ts->info_2D.max_y) x8gdata.fakey = ts->info_2D.max_y;
 
 		// generate events for 2nd finger
 		input_report_abs(ts->input_dev, ABS_HAT0X, x8gdata.fakex);
@@ -1132,8 +1148,7 @@ static int synaptics_ts_probe(
 	input_set_abs_params(ts->input_dev, ABS_MT_POSITION_Y, -inactive_area_top, max_y + inactive_area_bottom, fuzz_y, 0);
 	input_set_abs_params(ts->input_dev, ABS_MT_TOUCH_MAJOR, 0, 255, fuzz_p, 0);
 	input_set_abs_params(ts->input_dev, ABS_MT_WIDTH_MAJOR, 0, 255, fuzz_w, 0);
-	printk(KERN_ERR DX_MODULE_NAME ": pinch zoom gesture added\n");
-
+	
 	ret = input_register_device(ts->input_dev);
 	if (ret) {
 		printk(KERN_ERR "synaptics_ts_probe: Unable to register %s input device\n", ts->input_dev->name);
@@ -1208,6 +1223,7 @@ static int synaptics_ts_probe(
 
 	SYNA_DBG(printk(KERN_INFO "%s: Start touchscreen %s in %s mode\n", __FUNCTION__,
 		ts->input_dev->name, ts->use_irq ? "interrupt" : "polling");)
+	printk(KERN_ERR DX_MODULE_NAME ": pinch zoom gesture added\n");
 
 	return 0;
 
