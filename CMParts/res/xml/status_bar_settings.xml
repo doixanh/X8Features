@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   <PreferenceCategory android:title="@string/battery_title">
+      <CheckBoxPreference android:key="pref_battery_percentage"
+         android:title="@string/pref_battery_percentage_title"
+         android:summary="@string/pref_battery_percentage_summary" />
+      <Preference android:key="battery_status_color_title"
+         android:title="@string/battery_status_color_title"
+         android:defaultValue="-1"
+         android:dependency="pref_battery_percentage" />
+   </PreferenceCategory>
+   <PreferenceCategory android:title="@string/clock_title">
+      <CheckBoxPreference
+         android:key="show_status_clock"
+         android:title="@string/title_show_clock"
+         android:disableDependentsState="false" />
+      <Preference android:key="clock_color"
+         android:title="@string/title_clock_color"
+         android:defaultValue="-16777216"
+         android:dependency="show_status_clock" />
+      <CheckBoxPreference
+         android:key="show_clock_am_pm"
+         android:title="@string/clock_show_am_pm"
+         android:dependency="show_status_clock" />
+   </PreferenceCategory>
+   <PreferenceCategory android:title="@string/dbm_title">
+      <CheckBoxPreference
+         android:key="show_status_dbm"
+         android:title="@string/title_show_dbm"
+         android:disableDependentsState="false" />
+      <CheckBoxPreference
+         android:key="hide_signal_dbm"
+         android:title="@string/title_hide_signal_dbm"
+         android:dependency="show_status_dbm" />
+      <Preference android:key="dbm_color"
+         android:title="@string/title_dbm_color"
+         android:defaultValue="-16777216"
+         android:dependency="show_status_dbm" />
+   </PreferenceCategory>
+</PreferenceScreen>

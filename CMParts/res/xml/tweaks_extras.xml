@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   <PreferenceCategory android:title="@string/te_reset">
+      <Preference
+         android:key="reset_ui_tweaks_to_defaults"
+         android:title="@string/title_reset_ui_tweaks_to_defaults" />
+   </PreferenceCategory>
+   <PreferenceCategory android:title="@string/te_xml">
+      <Preference
+         android:key="save_theme"
+         android:title="@string/title_save_theme"
+         android:summary="@string/summary_save_theme" /> 
+      <ListPreference
+         android:key="apply_theme"
+         android:title="@string/title_apply_theme"
+         android:summary="@string/summary_apply_theme" />
+   </PreferenceCategory>
+</PreferenceScreen>

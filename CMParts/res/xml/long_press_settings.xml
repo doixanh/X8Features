@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="pref_show_recent_apps_title"
+        android:title="@string/recent_apps_show_title"
+        android:defaultValue="true" />
+
+    <ListPreference
+        android:key="pref_recent_apps_num"
+        android:title="@string/recent_apps_num_title"
+        android:summary="@string/recent_apps_num_summary"
+        android:entries="@array/entries_recent_apps_num"
+        android:entryValues="@array/entries_recent_apps_num"
+        android:dialogTitle="@string/dialog_recent_apps_num_title" />
+       
+    <CheckBoxPreference
+        android:key="pref_use_custom_app"
+        android:title="@string/use_custom_app_title"
+        android:summary="@string/use_custom_app_summary"
+        android:disableDependentsState="false" />
+        
+    <Preference
+        android:key="pref_select_custom_app"
+        android:title="@string/select_custom_app_title"
+        android:dependency="pref_use_custom_app" />
+        
+</PreferenceScreen>

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Generic -->
+    <string name="app_name">CyanogenMod 설정</string>
+
+    <!-- User interface -->
+    <string name="ui_title">사용자 인터페이스</string>
+    <string name="ui_summary">사용자 인터페이스 설정과 조정</string>
+    <string name="ui_status_bar">상태 표시줄 설정</string>
+
+    <!-- User interface : orientation -->
+    <string name="ui_rotation_title">화면 방향 자동 조절</string>
+    <string name="pref_rotation_90_title">90도</string>
+    <string name="pref_rotation_180_title">180도</string>
+    <string name="pref_rotation_270_title">270도</string>
+
+    <!-- User interface : LED Notifications -->
+    <string name="trackball_title">LED 알림</string>
+    <string name="trackball_summary">트랙볼/LED 알림 색과 깜빡임 설정</string>
+
+    <!-- User interface : WebView -->
+    <string name="ui_webview_title">WebView</string>
+    <string name="pref_pinch_reflow_title">확대 후 내용 다시 표시</string>
+    <string name="pref_pinch_reflow_summary">확대 후 자동으로 내용의 크기를 조절하여 다시 표시합니다.</string>
+
+    <!-- User interface : Lock Screen -->
+    <string name="ui_lockscreen_title">화면 잠금 설정</string>
+    <string name="pref_lockscreen_delay_title">대기</string>
+    <string name="pref_lockscreen_timeout_lock_delay">화면 시간초과 대기</string>
+    <string name="pref_lockscreen_screenoff_lock_delay">화면 꺼짐 대기</string>
+    <string name="pref_lockscreen_timeout_lock_delay_summary">화면을 오랫동안 납뒀을 때 화면 잠금을 표시하기 전까지의 대기 시간입니다.</string>
+    <string name="pref_lockscreen_screenoff_lock_delay_summary">화면이 꺼졌을 때 화면 잠금을 표시하기 전까지의 대기 시간입니다.</string>
+
+    <!-- Color Picker -->
+    <string name="title_color_picker">색 선택</string>
+    <string name="msg_color_picker">가운데 있는 색을 터치하여 선택합니다.\n뒤로 가기를 눌러 취소합니다.</string>
+
+    <!-- Status Bar -->
+    <string name="status_bar_title">상태 표시줄</string>
+    <string name="status_bar_summary">상태 표시줄 조정</string>
+
+    <!-- Status Bar, Battery -->
+    <string name="battery_title">배터리</string>
+    <string name="pref_battery_percentage_title">배터리 충전률 표시</string>
+    <string name="pref_battery_percentage_summary">상태 표시줄에 배터리 충전률을 숫자로 표시합니다.
+    </string>
+    <string name="battery_status_color_title">배터리 충전률 색</string>
+
+    <!-- Status Bar, Clock -->
+    <string name="clock_title">시계</string>
+    <string name="title_show_clock">시계 표시</string>
+    <string name="title_clock_color">시계 색</string>
+    <string name="clock_show_am_pm">12시간 시계의 오전/오후 표시</string>
+
+    <!-- Status Bar, dBm Signal -->
+    <string name="dbm_title">신호 세기(dBm)</string>
+    <string name="title_show_dbm">신호 세기 표시</string>
+    <string name="summary_on_show_dbm">dBm 단위로 신호 세기가 상태 표시줄에 표시됩니다.</string>
+    <string name="summary_off_show_dbm">dBm 단위로 신호 세기가 상태 표시줄에 표시됩니다.</string>
+    <string name="title_hide_signal_dbm">신호 세기 숨기기</string>
+    <string name="summary_on_hide_signal_dbm">신호 세기 아이콘이 사라지고 dBm만 표시됩니다.</string>
+    <string name="summary_off_hide_signal_dbm">신호 세기 아이콘이 표시됩니다.</string>
+    <string name="title_dbm_color">dBm 색</string>
+
+    <!-- Date and Provider -->
+    <string name="dp_title">날짜와 서비스 제공자</string>
+    <string name="dp_summary">날짜와 서비스 제공자 조정</string>
+
+    <!-- Date and Provider, Date -->
+    <string name="date_title">날짜</string>
+    <string name="title_date_color">날짜 색</string>
+
+    <!-- Date and Provider, PLMN -->
+    <string name="plmn_title">PLMN 캐리어 문자열</string>
+    <string name="title_show_plmn_ls">PLMN 표시 (잠금 화면)</string>
+    <string name="summary_on_show_plmn_ls">PLMN 값이 잠금 화면에 표시됩니다.</string>
+    <string name="summary_off_show_plmn_ls">PLMN 값이 잠금 화면에 표시되지 않습니다.</string>
+    <string name="title_show_plmn_sb">PLMN 표시 (상태 표시줄)</string>
+    <string name="summary_on_show_plmn_sb">PLMN 값이 상태 표시줄에 표시됩니다.</string>
+    <string name="summary_off_show_plmn_sb">PLMN 값이 상태 표시줄에 표시되지 않습니다.</string>
+    <string name="title_plmn_label_color">PLMN 캐리어 색</string>
+
+    <!-- Date and Provider, SPN -->
+    <string name="spn_title">SPN 캐리어 문자열</string>
+    <string name="title_show_spn_ls">SPN 표시 (잠금 화면)</string>
+    <string name="summary_on_show_spn_ls">SPN 값이 잠금 화면에 표시됩니다.</string>
+    <string name="summary_off_show_spn_ls">SPN 값이 잠금 화면에 표시되지 않습니다.</string>
+    <string name="title_show_spn_sb">SPN 표시 (상태 표시줄)</string>
+    <string name="summary_on_show_spn_sb">SPN 값이 상태 표시줄에 표시됩니다.</string>
+    <string name="summary_off_show_spn_sb">SPN 값이 상태 표시줄에 표시되지 않습니다.</string>
+    <string name="title_spn_label_color">SPN 캐리어 색</string>
+
+    <!-- Notifications -->
+    <string name="title_notifications_sb">상태 표시줄 알림</string>
+    <string name="title_notifications_color_tweaks">상태 표시줄 색</string>
+    <string name="summary_notifications_color_tweaks">상태 알림, 진행중인 알림, 최근 알림, 알림 제거 등</string>
+    <string name="title_notifications_ticker_color">상태 알림 색</string>
+    <string name="title_notifications_count_color">상태 갯수 색</string>
+    <string name="title_no_notifications_color">알림 없음 글자 색</string>
+    <string name="title_clear_button_label_color">알림 제거 글자 색</string>
+    <string name="title_ongoing_notifications_color">진행중인 알림 글자 색</string>
+    <string name="title_latest_notifications_color">최근 알림 글자 색</string>
+    <string name="title_notifications_items">항목 알림</string>
+    <string name="title_notifications_items_title">항목 제목 색</string>
+    <string name="title_notifications_items_text">항목 내용 색</string>
+    <string name="title_notifications_items_time">항목 시간 색</string>
+
+    <!-- User interface: Trackball notifcations -->
+    <string name="trackball_notifications_title">트랙볼 알림 색</string>
+    <string name="dialog_color_trackball">색 선택</string>
+    <string name="dialog_blink_trackball">깜빡임 간격 선택</string>
+    <string name="color_trackball_flash_title">깜빡임 색</string>
+        <string name="color_trackball_flash_summary">깜빡임의 색</string>
+    <string name="color_trackball_custom_title">사용자 지정 색</string>
+        <string name="color_trackball_custom_summary">깜빡일 색 선택</string>
+    <string name="color_trackball_blink_title">깜빡임 간격</string>
+        <string name="color_trackball_blink_summary">깜빡임 간격</string>
+    <string name="color_trackball_test_title">깜빡임 시험</string>
+        <string name="color_trackball_test_summary">시험</string>
+        <string name="dialog_clear_flash">깜빡임 제거</string>
+    <string name="trackball_advanced_title">고급</string>
+    <string name="pref_trackball_screen_title">항상 깜빡임</string>
+    <string name="pref_trackball_screen_summary">화면이 켜져 있으면 트랙볼이 깜빡입니다.</string>
+    <string name="pref_trackball_blend_title">알림 섞기</string>
+    <string name="pref_trackball_blend_summary">알림 색을 섞습니다. 연속 설정을 무시합니다.</string>
+    <string name="pref_trackball_sucess_title">연속</string>
+    <string name="pref_trackball_sucess_summary">알림을 연속적으로 깜빡입니다.</string>
+    <string name="pref_trackball_random_title">임의 색</string>
+    <string name="pref_trackball_random_summary">모든 알림에 대하여 LED를 임의의 색으로 깜빡입니다.</string>
+    <string name="pref_trackball_order_title">순서대로 깜빡이기</string>
+    <string name="pref_trackball_order_summary">LED의 색을 순서대로 깜빡입니다.</string>
+    <string name="pref_trackball_reset_title">초기화</string>
+    <string name="pref_trackball_reset_summary">모든 깜빡이 설정을 초기화합니다.</string>
+    <string name="dialog_trackball_loading">불러오는 중...</string>
+    <string name="dialog_trackball_packagelist">패키지 목록을 불러오고 있습니다</string>
+    <string name="trackball_category_dialog_text">새 분류 이름을 입력해 주세요</string>
+    <string name="trackball_category_list_title">분류</string>
+    <string name="trackball_category_list_summary">분류 선택</string>
+    <string name="trackball_category_screen">분류 관리</string>
+    <string name="trackball_category_add_title">분류 추가</string>
+    <string name="trackball_category_add_summary">목록에 분류를 추가합니다.</string>
+    <string name="trackball_category_remove_title">분류 제거</string>
+    <string name="trackball_category_remove_summary">목록에서 분류를 제거합니다.</string>
+    <string name="trackball_remove_default_toast">기본 분류를 제거할 수 없습니다.</string>
+    <string name="trackball_reset_all">모든 색과 분류 제거</string>
+    <string name="trackball_array_error">배열 에러가 발생하였습니다. 이 패키지는 기타 분류로 강제 이동됩니다.</string>
+
+    <!-- Trackball Settings : Warning dialog -->
+    <string name="notification_battery_warning_title">경고: 배터리 소모량이 많아집니다.</string>
+    <string name="notification_battery_warning">이 설정은 배터리 소모량을 시간당 3%정도씩 더 많아지게 합니다. 이 설정을 통하여 트랙볼 깜빡임을 설정했을 때 배터리 소모량이 많아지는 것이 느껴진다면 이것 때문입니다. 배터리 소모량을 늘리고 싶지 않다면 이 옵션을 활성화하지 마십시오.</string>
+
+
+    <!-- Tweaks Extras -->
+    <string name="te_title">기타 조정</string>
+    <string name="te_title_summary">환경 조정을 위한 기타 도구</string>
+    <string name="te_reset">초기화</string>
+    <string name="title_reset_ui_tweaks_to_defaults">사용자 환경 조정을 초기화합니다.</string>
+    <string name="te_xml">XML 도구</string>
+    <string name="title_dialog_ui_interface">사용자 환경 조정</string>
+    <string name="message_dialog_reset">모든 사용자 환경 조정을 기본값으로 초기화하시겠습니까? 다시 시작 후 변경을 확인할 수 있습니다.</string>
+    <string name="reset_ui_success">사용자 환경 조정이 초기화되었습니다! 다시 시작하여 변경을 확인하세요.</string>
+    <string name="message_dialog_export">파일의 이름을 입력하세요. 파일이 이미 존재한다면 기존 파일은 사라집니다.</string>
+    <string name="xml_sdcard_unmounted">SD 카드가 마운트되지 않았습니다.</string>
+    <string name="xml_write_error">XML 쓰기 에러!</string>
+    <string name="xml_export_success">XML 내보내기 성공!</string>
+    <string name="message_dialog_import">이 색상 테마를 불러오시겠습니까? 다시 시작하여 변경을 확인할 수 있습니다.</string>
+    <string name="xml_file_not_found">XML 파일을 찾을 수 없습니다.!</string>
+    <string name="xml_io_exception">파일 읽기 에러!</string>
+    <string name="xml_parse_error">XML 처리 에러!</string>
+    <string name="xml_invalid_color">XML에 알 수 없는 색상 코드가 존재합니다!</string>
+    <string name="xml_import_success">XML 가져오기 성공! 다시 시작하여 변경을 확인하세요.</string>
+    <string name="xml_run_helper">설정 도우미</string>
+    <string name="title_apply_theme">테마 선택</string>
+    <string name="summary_apply_theme">미리 만들어진 테마나 SD 카드에 저장된 테마를 선택하세요.</string>
+    <string name="title_save_theme">현재 테마 저장</string>
+    <string name="summary_save_theme">현재 색상 설정을 SD 카드로 저장합니다.</string>
+    
+
+    <!-- Input Settings -->
+    <string name="input_settings_title">입력 설정</string>
+    <string name="input_settings_summary">버튼 작동방식 조정</string>
+    <string name="button_settings_title">버튼 설정</string>
+    <string name="lockscreen_settings_title">잠금 화면 설정</string>
+    <string name="pref_lockscreen_music_controls_title">잠금 화면에서 음악 조정</string>
+    <string name="pref_lockscreen_music_controls_summary">음악 조정 화면을 잠금 화면에 표시합니다.</string>
+    <string name="pref_lockscreen_always_music_controls_title">항상 음악 조정 표시</string>
+    <string name="pref_lockscreen_always_music_controls_summary">음악을 재생하고 있지 않더라도 음악 조정 화면을 표시합니다.</string>
+    <string name="pref_trackball_wake_title">트랙볼 깨어남</string>
+    <string name="pref_trackball_wake_summary">트랙볼 버튼을 눌러 장비를 깨웁니다.</string>
+    <string name="pref_trackball_unlock_title">트랙볼 잠금 해제</string>
+    <string name="pref_trackball_unlock_summary">트랙볼을 눌러 잠금을 해제합니다.</string>
+    <string name="pref_menu_unlock_title">메뉴 잠금 해제</string>
+    <string name="pref_menu_unlock_summary">메뉴 버튼을 눌러 잠금을 해제합니다.</string>
+    <string name="pref_lockscreen_quick_unlock_control_title">빠른 잠금 해제</string>
+    <string name="pref_lockscreen_quick_unlock_control_summary">Pin이나 비밀번호를 입력할 때 확인을 누르지 않아도 됩니다. 단 글자 지우기는 잘못된 시도로 집계됩니다.</string>
+
+
+    <!-- Long Press Home -->
+    <string name="long_press_home_title">홈버튼 길게 누르기 설정</string>
+    <string name="long_press_home_summary">최근 어플리케이션의 갯수 설정 등</string>
+    <string name="recent_apps_show_title">최근 어플리케이션 제목 보이기</string>
+    <string name="recent_apps_num_title">최근 어플리케이션 갯수</string>
+    <string name="recent_apps_num_summary">홈 버튼을 길게 눌렀을때 보여줄 최근 어플리케이션의 갯수를 설정합니다.</string>
+    <string name="dialog_recent_apps_num_title">보여줄 최근 어플리케이션의 갯수를 선택하세요.</string>
+    <string name="use_custom_app_title">사용자 지정 어플리케이션 사용</string>
+    <string name="use_custom_app_summary">최근 어플리케이션 화면 대신에 사용자 지정 어플리케이션을 표시합니다.</string>
+    <string name="select_custom_app_title">사용자 지정 어플리케이션 설정</string>
+    <string name="group_applications">어플리케이션</string>
+
+    <!-- Performance Settings -->
+    <string name="performance_settings_title">성능 설정</string>
+    <string name="performance_settings_summary">장비 성능 설정</string>
+
+    <!-- Performance Settings : Compcache -->
+    <string name="pref_compcache_title">Compcache RAM 사용</string>
+    <string name="pref_compcache_summary">가상 용량을 늘리기 위해 메모리를 압축합니다 (다시 시작 필요)</string>
+
+    <!-- Performance Settings : JIT Mode -->
+    <string name="pref_jit_mode_title">JIT사용</string>
+    <string name="pref_jit_mode_summary">Dalvik just-in-time 컴파일러를 사용합니다. (다시 시작 필요)</string>
+
+    <!-- Performance Settings : Dithering -->
+    <string name="pref_use_dithering_title">화면 디더링 사용</string>
+    <string name="pref_use_dithering_summary">화면 디더링으로 이미지 품질을 높일 수 있지만 성능이 떨어집니다. (다시 시작 필요)</string>
+
+    <!-- Performance Settings : VM Heap Size -->
+    <string name="pref_heapsize_title">VM heap 크기</string>
+    <string name="pref_heapsize_summary">VM heap에 사용할 최대 메모리 크기 선택 (다시 시작 필요)</string>
+
+    <!-- Performance Settings : Warning dialog -->
+    <string name="performance_settings_warning_title">경고!</string>
+    <string name="performance_settings_warning">이 설정은 시스템의 성능을 주로 나쁜 방향으로 조정합니다. 이 설정은 실험을 위해 포함되었고 이 설정의 변경으로 인한 문제점을 보고하지 마십시오.</string>
+
+    <!-- Application Settings -->
+    <string name="application_settings_title">어플리케이션 설정</string>
+    <string name="application_settings_summary">설치 경로와 같은 어플리케이션 설정 변경</string>
+
+    <!-- Application Settings : Move any app -->
+    <string name="pref_move_all_apps_title">어플리케이션 이동 허용</string>
+    <string name="pref_move_all_apps_summary">외부 저장장치로 어플리케이션 이동 허용</string>
+
+    <!-- Application Settings : Install Location -->
+    <string name="pref_install_location_title">설치 위치</string>
+    <string name="pref_install_location_summary">새로운 어플리케이션의 설치 위치를 선택하세요.</string>
+
+    <!-- HapticTweaks -->
+    <string name="haptic_title">촉각 반응 설정 조정</string>
+    <string name="haptic_summary">촉각 반응이 언제, 또 얼마나 강하게 반응할 지 조절합니다.</string>
+
+    <string name="title_haptic_feedback">주 촉각 반응</string>
+    <string name="summary_on_haptic_feedback">가상 키보드 누름이나 특정 사용자 환경 반응에 대한 촉각 반응 사용</string>
+    <string name="summary_off_haptic_feedback">가상 키보드 누름이나 특정 사용자 환경 반응에 대한 촉각 반응 사용 안함</string>
+
+    <string name="title_haptic_feedback_up">올림 촉각 반응</string>
+    <string name="summary_on_haptic_feedback_up">가상 키보드 뗌이나 특성 사용자 환경 반응에 대한 촉각 반응 사용</string>
+    <string name="summary_off_haptic_feedback_up">가상 키보드 뗌이나 특성 사용자 환경 반응에 대한 촉각 반응 사용 안함</string>
+
+    <string name="title_haptic_feedback_all">항목 촉각 반응</string>
+    <string name="summary_on_haptic_feedback_all">화면 선택을 할 때 촉각 반응 사용</string>
+    <string name="summary_off_haptic_feedback_all">화면 선택을 할 때 촉각 반응 사용 안함</string>
+
+    <string name="title_haptic_down_decider">내림 패턴 설정</string>
+    <string name="title_haptic_up_decider">올림 패턴 설정</string>
+    <string name="title_haptic_long_decider">길게 누르기 패턴 설정</string>
+    <string name="title_haptic_tap_decider">키보드 누름 패턴 설정</string>
+
+    <string name="title_haptic_menu">촉각 반응 조정</string>
+    <string name="title_haptic_notice">설정이 모두 적용되려면 다시 시작이 필요합니다.</string>
+
+    <string name="haptic_delay_desc">ms 꺼짐 시간</string>
+    <string name="haptic_vibe_desc">ms 켬 시간</string>
+
+    <string name="haptic_down_description">버튼을 누를 때의 촉각 반응 조정\n(하드웨어 키보드나 특정한 사용자 인터페이스 상호 작용)</string>
+    <string name="haptic_up_description">버튼을 뗄 때의 촉각 반응 조정\n(하드웨어 키보드나 대부분의 화면 누름)</string>
+    <string name="haptic_long_description">오래 누를 때의 촉각 작용 조정</string>
+    <string name="haptic_tap_description">가상 키보드 입력시 촉각 반응 조정</string>
+
+    <string name="haptic_plus_minus_desc">더하기나 빼기 버튼을 이용하여 동작을 추가할 수 있습니다.</string>
+
+    <string name="haptic_button_plus">+</string>
+    <string name="haptic_button_minus">-</string>
+
+    <string name="haptic_button_save">저장</string>
+    <string name="haptic_button_test">시험</string>
+    <string name="haptic_button_cancel">취소</string>
+    <string name="haptic_button_revert">변경사항 되돌리기</string>
+    <string name="haptic_button_default">기본값 불러오기</string>
+
+    <string name="haptic_save_toast">촉각 반응 설정 저장중: </string>
+    <string name="haptic_cancel_toast">값이 바뀌지 않았습니다</string>
+    <string name="haptic_revert_toast">이전에 사용했던 값을 불러옵니다.</string>
+    <string name="haptic_default_toast">내장된 기본값을 불러옵니다.</string>
+
+    <string name="general_title">일반</string>
+
+    <!-- UI Settings : Power off prompt -->
+    <string name="pref_power_prompt_title">전원 버튼 확인</string>
+    <string name="pref_power_prompt_summary">종료나 다시 시작을 눌렀을 때 다시 한번 물어볼지 선택합니다.</string>
+
+    <!-- UI Settings : Render effect -->
+    <string name="pref_render_effect_title">화면 효과</string>
+    <string name="pref_render_effect_summary">화면을 그릴 때 어떤 색을 사용할 지 선택합니다 (배터리 사용량을 줄일 수 있습니다)</string>
+
+    <string name="widget_name">RenderFX 위젯</string>
+    <string name="renderfx_temp">RenderFX</string>
+    <string name="prefs_render_effect">화면 효과</string>
+    <string name="notify_render_effect">화면 효과 켜기</string>
+        <string name="add_widget">위젯 추가</string>
+
+    <!--  Widget Types -->
+    <string name="night">야간</string>
+    <string name="terminal">터미널</string>
+    <string name="blue">파랑</string>
+    <string name="amber">주황</string>
+    <string name="salmon">황색</string>
+    <string name="fuscia">자주색</string>
+
+    <!-- Notification Bar Colors -->
+
+    <string name="title_notification_bar">상태 표시줄</string>
+    <string name="title_custom_not_bar">사용자 지정 상태 표시줄</string>
+    <string name="summary_custom_not_bar_on">사용자가 지정한 색과 스타일을 상태 표시줄에 사용합니다.</string>
+    <string name="summary_custom_not_bar_off">구식의 CyanogenMod식 상태 표시줄을 사용합니다.</string>
+    <string name="title_not_bar_color_mask">표시줄 색</string>
+    <string name="summary_not_bar_color_mask">알림: 투명 설정은 적용되지 않을 것입니다.</string>
+    <string name="title_custom_exp_not_bar">사용자 지정 내림 표시줄</string>
+    <string name="summary_custom_exp_not_bar_on">사용자가 지정한 색과 스타일을 내림 표시줄에 사용</string>
+    <string name="summary_custom_exp_not_bar_off">구식의 CyanogenMod식 내림 표시줄 사용</string>
+    <string name="title_not_exp_bar_color_mask">내림 표시줄 색</string>
+    <string name="summary_not_exp_bar_color_mask">내림 표시줄의 항목에 적용할 색을 선택하세요</string>
+
+
+    <!-- Expanded View Power Widget -->
+    <string name="title_widget_buttons">확장된 위젯</string>
+    <string name="title_expanded_widget">알림 전원 위젯</string>
+    <string name="summary_expanded_widget">확장된 전윈 위젯을 사용합니다.</string>
+    <string name="expanded_color_mask">지시기 색</string>
+    <string name="title_widget_picker">위젯 버튼</string>
+    <string name="summary_widget_picker">사용할 위젯 버튼을 골라주세요.</string>
+    <string name="title_toggle_wifi">와이파이</string>
+    <string name="title_toggle_bluetooth">블루투스</string>
+    <string name="title_toggle_gps">GPS</string>
+    <string name="title_toggle_sound">소리</string>
+    <string name="title_toggle_brightness">밝기</string>
+    <string name="title_toggle_sync">동기화</string>
+    <string name="title_toggle_wifiap">테더링</string>
+    <string name="title_toggle_screentimeout">화면 시간초과</string>
+    <string name="title_toggle_mobiledata">모바일 데이터</string>
+    <string name="title_toggle_lockscreen">잠금 화면</string>
+    <string name="title_toggle_networkmode">2G/3G</string>
+    <string name="title_toggle_autorotate">방향 자동 조정</string>
+    <string name="title_toggle_airplane">에어플레인 모드</string>
+    <string name="title_toggle_flashlight">LED 플래시라이트</string>
+    <string name="title_toggle_sleep">잠자기</string>
+    <string name="title_button_modes">버튼 설정</string>
+    <string name="pref_brightness_mode_title">밝기 버튼 설정</string>
+    <string name="pref_brightness_mode_summary">밝기 버튼의 작용을 선택합니다.</string>
+    <string name="pref_network_mode_title">네트워크 버튼 설정</string>
+    <string name="pref_network_mode_summary">네트워크 버튼의 작용을 선택합니다.</string>
+    <string name="pref_screentimeout_mode_title">화면 시간초과 버튼 설정</string>
+    <string name="pref_screentimeout_mode_summary">시간초과 버튼의 작용을 선택합니다.</string>
+    <string name="pref_ring_mode_title">소리 버튼 설정</string>
+    <string name="pref_ring_mode_summary">소리 버튼의 작용을 선택합니다.</string>
+    <string name="pref_flash_mode_title">플래시 버튼</string>
+    <string name="pref_flash_mode_summary">High / Death Ray(Evo) 선택</string>
+    <string name="widget_max_buttons">버튼은 6개까지 선택할 수 있습니다.</string>
+
+
+    <!-- Performance : Lock home memory -->
+    <string name="pref_lock_home_title">홈 어플리케이션 고정</string>
+    <string name="pref_lock_home_summary">홈 어플리케이션을 메모리에 항상 올려놓습니다.</string>
+
+    <!-- Performance : Lock mms app in memory -->
+    <string name="pref_lock_mms_title">메시지 어플리케이션 고정</string>
+    <string name="pref_lock_mms_summary">메모리가 낮을 때 메시지를 받지 못하는 상황을 예방합니다.</string>
+
+    <!-- Backlight -->
+    <string name="backlight_title">자동 밝기</string>
+    <string name="backlight_summary">단계와 필터 조절</string>
+    <string name="light_filter_title">조도 센서 필터</string>
+    <string name="light_filter_enabled_title">활성화</string>
+    <string name="light_filter_enabled_summary">움직이는 평균 필터를 이용하여 밝기가 계속 변하는 것을 줄입니다</string>
+    <string name="light_filter_window_title">창 크기</string>
+    <string name="light_filter_window_summary">이 기간 동안의 평균이 필터된 값입니다.</string>
+    <string name="light_filter_reset_title">초기화 한계</string>
+	<string name="light_filter_reset_summary">측정값과 평균과의 차이가 이 값보다 크면 필터를 초기화합니다.</string>
+    <string name="light_filter_interval_title">측정 주기</string>
+    <string name="light_filter_interval_summary">낮은 값은 더 정밀하지만 CPU를 더 많이 사용합니다.</string>
+    <string name="light_levels_title">밝기 단계</string>
+    <string name="light_levels_enabled_title">사용자 지정 단계 사용</string>
+    <string name="light_levels_dim_title">화면을 어둡게 할 밝기</string>
+    <string name="light_levels_dim_summary">화면을 어둡게 할 때 사용할 밝기 값을 지정합니다.</string>
+    <string name="light_levels_editor_title">사용자 지정 단계 수정...</string>
+    <string name="light_decrease_enabled_title">밝기 감소 허용</string>
+    <string name="light_decrease_enabled_summary">밝기 감소를 허용합니다. 히스테리시스를 사용하여 잦은 밝기 변화를 줄입니다.</string>
+    <string name="light_decrease_hysteresis_title">감소 히스테리시스</string>
+    <string name="light_decrease_hysteresis_summary">센서 값을 내릴 때 이 값을 적용합니다.</string>
+
+    <!-- Light sensor levels -->
+    <string name="ll_title">조도 센서 단계</string>
+    <string name="ll_header_upper">최고</string>
+    <string name="ll_header_lower">최저</string>
+    <string name="ll_header_lcd">화면</string>
+    <string name="ll_header_btn">버튼</string>
+    <string name="ll_header_kb">키보드</string>
+    <string name="ll_lux">센서 값 (필터됨 / 실제):</string>
+    <string name="ll_lcd">화면:</string>
+    <string name="ll_btn">버튼:</string>
+    <string name="ll_kb">키보드:</string>
+    <string name="ll_disabled">비활성화됨</string>
+    <string name="ll_default">기본값 불러오기</string>
+    <string name="ll_save">저장후 적용</string>
+    <string name="ll_reload">값 다시 불러오기</string>
+    <string name="ll_bad_levels">단계는 항상 증가해야 됩니다.</string>
+    <string name="ll_num_levels">단계 수 설정</string>
+
+    <!-- Sound -->
+    <string name="sound_title">소리 설정</string>
+    <string name="sound_summary">소리와 오디오 집중 설정</string>
+    <string name="sound_notifications_focus_title">알림 집중</string>
+    <string name="sound_notifications_focus_summary">오디오 집중은 알림 소리가 재생될 때 호환되는 어플리케이션이 볼륨을 낮추도록 요청하는 기능입니다.</string>
+    <string name="sound_to_speaker_title">항상 스피커로 재생</string>
+    <string name="sound_notifications_title">알림</string>
+    <string name="sound_rings_title">벨소리</string>
+    <string name="sound_alarms_title">알람</string>
+    <string name="sound_note_title">안내</string>
+    <string name="sound_note_summary">아래의 설정은 헤드폰을 이용할 때만 적용됩니다.</string>
+    <string name="sound_attenuation_title">감쇠 설정</string>
+    <string name="sound_limitvol_title">음악 재생중의 감쇠</string>
+    <string name="sound_notifications_attenuation_dialog">알림 감쇠</string>
+    <string name="sound_rings_attenuation_dialog">벨소리 감쇠</string>
+    <string name="sound_alarms_attenuation_dialog">알람 감쇠</string>
+    <string name="sound_notifications_limitvol_dialog">알림 볼륨</string>
+    <string name="sound_rings_limitvol_dialog">벨소리 볼륨</string>
+    <string name="sound_alarms_limitvol_dialog">알람 볼륨</string>
+    <!-- Quiet hours -->
+    <string name="sound_category_quiet_hours_title">조용한 시간</string>
+    <string name="quiet_hours_enabled">조용한 시간 사용</string>
+    <string name="quiet_hours_enabled_on">조용한 시간을 사용합니다.</string>
+    <string name="quiet_hours_enabled_off">평상시와 동일하게 알람을 사용합니다.</string>
+    <string name="quiet_hours_start">조용한 시간 시작</string>
+    <string name="quiet_hours_start_summary">조용한 시간을 시작할 때를 지정합니다.</string>
+    <string name="quiet_hours_end">조용한 시간 끝</string>
+    <string name="quiet_hours_end_summary">조용한 시간을 끝낼 때를 지정합니다.</string>
+    <string name="quiet_hours_mute">알림 재생 안함</string>
+    <string name="quiet_hours_mute_on">소리가 재생되지 않습니다.</string>
+    <string name="quiet_hours_mute_off">평상시처럼 소리가 재생됩니다.</string>
+    <string name="quiet_hours_still">진동 비활성화</string>
+    <string name="quiet_hours_still_on">장치는 진동하지 않을 것입니다.</string>
+    <string name="quiet_hours_still_off">평상시처럼 진동합니다.</string>
+    <string name="quiet_hours_dim">LED 희미하게</string>
+    <string name="quiet_hours_dim_on">가능하면 LED는 희미해질 것입니다.</string>
+    <string name="quiet_hours_dim_off">LED는 최대 밝기가 될 것입니다.</string>
+    
+    <string name="cmstats_title">익명 통계</string>
+    <string name="cmstats_summary">CM을 더 발전시키기 위해 익명 통계 보고를 설정할 수 있습니다.</string>
+
+
+</resources>

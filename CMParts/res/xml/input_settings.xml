@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Haptic Feedback -->
+    <PreferenceScreen android:key="haptic_settings"
+        android:title="@string/haptic_title" android:summary="@string/haptic_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.cmparts"
+            android:targetClass="com.cyanogenmod.cmparts.activities.HapticTweaksActivity" />
+    </PreferenceScreen>
+
+    <!-- Long Press Home -->
+    <PreferenceScreen android:key="long_press_home"
+        android:title="@string/long_press_home_title" android:summary="@string/long_press_home_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.cmparts"
+            android:targetClass="com.cyanogenmod.cmparts.activities.LongPressHomeActivity" />
+    </PreferenceScreen>
+
+    <PreferenceCategory android:key="lockscreen_category" android:title="@string/lockscreen_settings_title">
+        <CheckBoxPreference android:key="lockscreen_music_controls"
+            android:title="@string/pref_lockscreen_music_controls_title" android:summary="@string/pref_lockscreen_music_controls_summary" />
+        <CheckBoxPreference android:key="lockscreen_always_music_controls"
+            android:dependency="lockscreen_music_controls"
+            android:title="@string/pref_lockscreen_always_music_controls_title" 
+            android:summary="@string/pref_lockscreen_always_music_controls_summary" />
+        <CheckBoxPreference android:key="lockscreen_quick_unlock_control"
+            android:title="@string/pref_lockscreen_quick_unlock_control_title" android:summary="@string/pref_lockscreen_quick_unlock_control_summary" />
+        <ListPreference android:key="pref_lockscreen_style"
+            android:dialogTitle="@string/pref_lockscreen_style_title"
+            android:title="@string/pref_lockscreen_style_title" android:summary="@string/pref_lockscreen_style_summary"
+            android:entries="@array/pref_lockscreen_style_entries" android:entryValues="@array/pref_lockscreen_style_values" />
+        <CheckBoxPreference android:key="lockscreen_phone_messaging_tab"
+            android:title="@string/pref_lockscreen_phone_messaging_control_title"
+            android:summary="@string/pref_lockscreen_phone_messaging_control_summary" />
+        <Preference android:key="pref_messaging_tab_app"
+            android:dependency="lockscreen_phone_messaging_tab" android:title="@string/pref_messaging_tab_app_title" />
+        <PreferenceScreen android:key="lockscreen_gestures"
+            android:title="@string/pref_lockscreen_title">
+                <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.cyanogenmod.cmparts"
+                    android:targetClass="com.cyanogenmod.cmparts.activities.GestureMenuActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/button_settings_title" android:key="pref_category_button_settings">
+        <CheckBoxPreference android:key="pref_trackball_wake"
+            android:title="@string/pref_trackball_wake_title" android:summary="@string/pref_trackball_wake_summary" />
+
+        <CheckBoxPreference android:key="pref_trackball_unlock"
+            android:title="@string/pref_trackball_unlock_title" android:summary="@string/pref_trackball_unlock_summary" />
+
+        <CheckBoxPreference android:key="pref_menu_unlock"
+            android:title="@string/pref_menu_unlock_title" android:summary="@string/pref_menu_unlock_summary" />
+
+        <CheckBoxPreference android:key="lockscreen_disable_unlock_tab"
+            android:title="@string/pref_lockscreen_disable_unlock_tab"
+            android:summary="@string/pref_lockscreen_disable_unlock_tab_summary" />
+
+        <Preference
+            android:key="pref_user_defined_key1"
+            android:title="@string/user_defined_key1"
+            android:summary="@string/user_defined_not_set"
+            />
+        <Preference
+            android:key="pref_user_defined_key2"
+            android:title="@string/user_defined_key2"
+            android:summary="@string/user_defined_not_set"
+            />
+        <Preference
+            android:key="pref_user_defined_key3"
+            android:title="@string/user_defined_key3"
+            android:summary="@string/user_defined_not_set"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

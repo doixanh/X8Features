@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Generic -->
+    <string name="app_name">Impostazioni CyanogenMod</string>
+
+    <!--  Update Notifications -->
+    <string name="updatenotify_title">Notifiche Aggiornamenti</string>
+    <string name="updatenotify_summary">Ricevi notifiche per gli aggiornamenti.</string>
+
+    <!-- User interface -->
+    <string name="ui_title">Interfaccia utente</string>
+    <string name="ui_summary">Impostazioni e modifiche interfaccia utente</string>
+    <string name="ui_status_bar">Personalizzazione Status Bar</string>
+
+    <!-- User interface : orientation -->
+    <string name="ui_rotation_title">Rotazione accelerometro</string>
+    <string name="pref_rotation_90_title">90 gradi</string>
+    <string name="pref_rotation_180_title">180 gradi</string>
+    <string name="pref_rotation_270_title">270 gradi</string>
+
+    <!-- User interface : trackball -->
+    <string name="trackball_title">Notifiche LED</string>
+    <string name="trackball_summary">Imposta colore e pulsazione delle notifiche trackball/LED</string>
+
+    <!-- User interface : WebView -->
+    <string name="ui_webview_title">WebView</string>
+    <string name="pref_pinch_reflow_title">Reflow dopo il pinch in</string>
+    <string name="pref_pinch_reflow_summary">Reflow del testo dopo il pinch to zoom</string>
+
+    <!-- User interface : Overscroll -->
+    <string name="ui_overscroll_title">Overscrolling</string>
+    <string name="pref_overscroll_title">Attiva overscrolling</string>
+    <string name="pref_overscroll_summary_on">Effetto di rimbalzo per elementi scorrevoli</string>
+    <string name="pref_overscroll_summary_off">Nessun effetto di rimbalzo per elementi scorrevoli</string>
+    <string name="pref_overscroll_weight_title">Misura overscrolling</string>
+    <string name="pref_overscroll_weight_summary">Seleziona l\'entità dell\'effetto di rimbalzo</string>
+
+    <!-- User interface : Lock Screen -->
+        <string name="ui_lockscreen_title">Impostazioni Lockscreen</string>
+        <string name="pref_lockscreen_delay_title">Ritardo</string>
+        <string name="pref_lockscreen_timeout_lock_delay">Ritardo dopo timeout</string>
+        <string name="pref_lockscreen_screenoff_lock_delay">Ritardo dopo spegnimento</string>
+        <string name="pref_lockscreen_timeout_lock_delay_summary">Di quanto ritardare il blocco dello schermo dopo il timeout</string>
+        <string name="pref_lockscreen_screenoff_lock_delay_summary">Di quanto ritardare il blocco dello schermo dopo averlo spento</string>
+
+    <!-- Color Picker -->
+    <string name="title_color_picker">Scegli un colore</string>
+    <string name="msg_color_picker">Premi al centro per confermare.\nPremi indietro per annullare</string>
+
+    <!-- Status Bar -->
+    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_summary">Modifiche alla Status bar</string>
+
+    <!-- Status Bar, Battery -->
+    <string name="battery_title">Batteria</string>
+    <string name="pref_battery_percentage_title">Percentuale batteria</string>
+    <string name="pref_battery_percentage_summary">Visualizza la percentuale della batteria nella status bar</string>
+    <string name="battery_status_color_title">Colore percentuale batteria</string>
+
+    <!-- Status Bar, Clock -->
+    <string name="clock_title">Orologio</string>
+    <string name="title_show_clock">Mostra orologio</string>
+    <string name="title_clock_color">Colore orologio</string>
+    <string name="clock_show_am_pm">Mostra AM/PM per orologio a 12 ore</string>
+
+    <!-- Status Bar, dBm Signal -->
+    <string name="dbm_title">Potenza segnale dBm</string>
+    <string name="title_show_dbm">Mostra dBm</string>
+    <string name="summary_on_show_dbm">La potenza del segnale viene visualizzata in dBm nella status bar</string>
+    <string name="summary_off_show_dbm">La potenza del segnale non viene visualizzato in dBm nella status bar</string>
+    <string name="title_hide_signal_dbm">Nascondi potenza segnale</string>
+    <string name="summary_on_hide_signal_dbm">L\'icona di potenza del segnale non è attiva, verranno visualizzati solo i dBm</string>
+    <string name="summary_off_hide_signal_dbm">L\'icona di potenza del segnale è attiva</string>
+    <string name="title_dbm_color">colore dBm</string>
+
+    <!-- Date and Provider -->
+    <string name="dp_title">Data e operatore</string>
+    <string name="dp_summary">Modifiche data e operatore</string>
+
+    <!-- Date and Provider, Date -->
+    <string name="date_title">Data</string>
+    <string name="title_date_color">Colore data</string>
+
+    <!-- Date and Provider, PLMN -->
+    <string name="plmn_title">Stringa operatore</string>
+    <string name="title_show_plmn_ls">Visualizza operatore (lockscreen)</string>
+    <string name="summary_on_show_plmn_ls">L\'operatore viene visualizzato nel lockscreen</string>
+    <string name="summary_off_show_plmn_ls">L\'operatore non viene visualizzato nel lockscreen</string>
+    <string name="title_show_plmn_sb">Visualizza operatore (status bar)</string>
+    <string name="summary_on_show_plmn_sb">L\'operatore viene visualizzato nella status bar</string>
+    <string name="summary_off_show_plmn_sb">L\'operatore non viene visualizzato nella status bar</string>
+    <string name="title_plmn_label_color">Colore etichetta operatore</string>
+
+    <!-- Date and Provider, SPN -->
+    <string name="spn_title">Stringa provider</string>
+    <string name="title_show_spn_ls">Visualizza provider (lockscreen)</string>
+    <string name="summary_on_show_spn_ls">Il provider viene visualizzato nel lockscreen</string>
+    <string name="summary_off_show_spn_ls">Il provider non viene visualizzato nel lockscreen</string>
+    <string name="title_show_spn_sb">Visualizza provider (status bar)</string>
+    <string name="summary_on_show_spn_sb">Il provider viene visualizzato nella status bar</string>
+    <string name="summary_off_show_spn_sb">Il provider non viene visualizzato nella status bar</string>
+    <string name="title_spn_label_color">Colore etichetta provider</string>
+
+    <!-- Notifications -->
+    <string name="title_notifications_sb">Notifiche status bar</string>
+    <string name="title_notifications_color_tweaks">Colori notifiche</string>
+    <string name="summary_notifications_color_tweaks">Ticker notifiche, notifiche in corso, ultime notifiche, cancella notifiche, etc.</string>
+    <string name="title_notifications_ticker_color">Ticker notifiche</string>
+    <string name="title_notifications_count_color">Colore conteggio notifiche</string>
+    <string name="title_no_notifications_color">Titolo Nessuna notifica</string>
+    <string name="title_clear_button_label_color">Etichetta Cancella</string>
+    <string name="title_ongoing_notifications_color">Titolo notifiche in corso</string>
+    <string name="title_latest_notifications_color">Titolo ultime notifiche</string>
+    <string name="title_notifications_items">Componenti della notifica</string>
+    <string name="title_notifications_items_title">Titolo</string>
+    <string name="title_notifications_items_text">Testo</string>
+    <string name="title_notifications_items_time">Ora</string>
+
+    <!-- User interface: LED notifcations -->
+        <string name="trackball_notifications_title">Colori Notifiche LED</string>
+        <string name="dialog_color_trackball">Scegli un colore</string>
+        <string name="dialog_blink_trackball">Scegli frequenza di lampeggio</string>
+        <string name="color_trackball_flash_title">Colore lampeggio</string>
+        <string name="color_trackball_flash_summary">Colore da usare per il lampeggio del LED</string>
+        <string name="color_trackball_custom_title">Colore personalizzato</string>
+        <string name="color_trackball_custom_summary">Colore personalizzato da usare per il lampeggio</string>
+        <string name="color_trackball_blink_title">Frequenza lampeggio</string>
+        <string name="color_trackball_blink_summary">Frequenza del lampeggio</string>
+        <string name="color_trackball_test_title">Prova lampeggio</string>
+        <string name="color_trackball_test_summary">Prova il lampeggio</string>
+        <string name="dialog_clear_flash">Ferma Lampeggio</string>
+    <string name="trackball_advanced_title">Avanzato</string>
+    <string name="pref_trackball_screen_title">Pulsa sempre</string>
+    <string name="pref_trackball_screen_summary">Il LED pulserà anche a schermo acceso</string>
+    <string name="pref_trackball_blend_title">Mischia colori di notifica</string>
+    <string name="pref_trackball_blend_summary">Mischia i colori delle luci di notifica</string>
+    <string name="pref_trackball_sucess_title">Successione</string>
+    <string name="pref_trackball_sucess_summary">Notifiche pulsanti in successione</string>
+    <string name="pref_trackball_random_title">Colori Casuali</string>
+    <string name="pref_trackball_random_summary">Pulsa il LED con colori casuali per tutte le notifiche</string>
+    <string name="pref_trackball_order_title">Pulsa in sequenza</string>
+    <string name="pref_trackball_order_summary">Pulsa il LED con una sequenza di colori</string>
+    <string name="pref_trackball_reset_title">Ripristino</string>
+    <string name="pref_trackball_reset_summary">Ripristina tutti i colori e le app</string>
+    <string name="dialog_trackball_loading">Caricamento...</string>
+    <string name="dialog_trackball_packagelist">Caricamento Lista App</string>
+    <string name="trackball_category_dialog_text">Inserisci una nuova categoria</string>
+    <string name="trackball_category_list_title">Categoria</string>
+    <string name="trackball_category_list_summary">Scegli una categoria</string>
+    <string name="trackball_category_screen">Gestisci Categorie</string>
+    <string name="trackball_category_add_title">Aggiungi categoria</string>
+    <string name="trackball_category_add_summary">Aggiungi una categoria alla lista</string>
+    <string name="trackball_category_remove_title">Rimuovi categoria</string>
+    <string name="trackball_category_remove_summary">Rimuovi una categoria dalla lista</string>
+    <string name="trackball_remove_default_toast">Non è possibile rimuovere la categoria di default.</string>
+    <string name="trackball_reset_all">Ripristina le app e le categorie</string>
+    <string name="trackball_array_error">Purtroppo si è verificato un errore di array. Questa app è stata forzata nella categoria Miscellaneous.</string>
+    <string name="trackball_color_notice_title">NOTA:</string>
+    <string name="trackball_color_notice_summary">Non tutti i colori verranno visualizzati su tutti i dispositivi.</string>
+
+    <!-- Trackball Settings : Warning dialog -->
+    <string name="notification_battery_warning_title">ATTENZIONE:Aumento consumo di batteria</string>
+    <string name="notification_battery_warning">È stato provato che questa opzione aumenta il consumo di batteria del ~3% ogni ora. Se noti un aumento del consumo mentre sono attive le notifiche pulsanti questa ne è la causa. Non attivarla se non vuoi peggiorare la durata della batteria.</string>
+
+    <!-- Tweaks Extras -->
+    <string name="te_title">Modifiche extra</string>
+    <string name="te_title_summary">Strumenti extra per modifiche all\'interfaccia</string>
+    <string name="te_reset">Ripristina</string>
+    <string name="title_reset_ui_tweaks_to_defaults">Ripristina UI a valori di default</string>
+    <string name="te_xml">Strumenti XML</string>
+    <string name="title_dialog_ui_interface">Modifiche interfaccia UI</string>
+    <string name="message_dialog_reset">Ripristina tutte le modifiche alla UI a valori di default? Riavvio richiesto</string>
+    <string name="reset_ui_success">Ripristinata la UI a valori di default! Riavvia.</string>
+    <string name="message_dialog_export">Inserisci un nome per questo file.  Se il file già esiste verrà sovrascritto.</string>
+    <string name="xml_sdcard_unmounted">Scheda SD non montata!</string>
+    <string name="xml_write_error">Errore nello scrivere file XML!</string>
+    <string name="xml_export_success">XML esportato con successo!</string>
+    <string name="message_dialog_import">Sei sicuro di voler caricare questo tema?  Riavvio richiesto</string>
+    <string name="xml_file_not_found">File XML non trovato!</string>
+    <string name="xml_io_exception">Errore nel leggere il file!</string>
+    <string name="xml_parse_error">Errore nel parsing del file!</string>
+    <string name="xml_invalid_color">Codice colore non valido!</string>
+    <string name="xml_import_success">File XML importato con successo! Riavvia affinchè le modifiche abbiano effetto.</string>
+    <string name="xml_run_helper">Avviando aiuto impostazioni</string>
+    <string name="title_apply_theme">Seleziona un tema</string>
+    <string name="summary_apply_theme">Scegli tra un tema già fatto o uno salvato nella tua scheda SD</string>
+    <string name="title_save_theme">Salva tema attuale</string>
+    <string name="summary_save_theme">Salva l\'attuale combinazione di colori nella tua scheda SD</string>
+
+    <!-- Input Settings -->
+    <string name="input_settings_title">Impostazioni input</string>
+    <string name="input_settings_summary">Scegli il comportamento dei tasti</string>
+    <string name="button_settings_title">Impostazioni tasti</string>
+    <string name="lockscreen_settings_title">Impostazioni Lockscreen</string>
+    <string name="pref_lockscreen_music_controls_title">Controlli player musicale</string>
+    <string name="pref_lockscreen_music_controls_summary">Visualizza i controlli del player musicale nel lockscreen</string>
+    <string name="pref_lockscreen_always_music_controls_title">Visualizza sempre controlli musicali</string>
+    <string name="pref_lockscreen_always_music_controls_summary">Visualizza sempre i controlli del player musicale nel lockscreen</string>
+    <string name="pref_trackball_wake_title">Trackball wake</string>
+    <string name="pref_trackball_wake_summary">Sveglia il telefono premendo la trackball</string>
+    <string name="pref_trackball_unlock_title">Trackball unlock</string>
+    <string name="pref_trackball_unlock_summary">Sblocca il telefono premendo la trackball</string>
+    <string name="pref_menu_unlock_title">Menu unlock</string>
+    <string name="pref_menu_unlock_summary">Sblocca il telefono premendo il tasto menu</string>
+    <string name="pref_lockscreen_quick_unlock_control_title">Sblocco veloce</string>
+    <string name="pref_lockscreen_quick_unlock_control_summary">Non è richiesto premere OK dopo aver inserito il PIN o la Password. Cancellare conta come tentativo fallito.</string>
+    <string name="pref_lockscreen_phone_messaging_control_title">Telefono e Messaggi</string>
+    <string name="pref_lockscreen_phone_messaging_control_summary">Applicazioni Telefono e Messaggi accessibili dal lockscreen.</string>
+    <string name="pref_messaging_tab_app_title">Applicazione messaggi</string>
+    <string name="pref_lockscreen_style_title">Stile lockscreen</string>
+    <string name="pref_lockscreen_style_summary">Scegli lo stile del lockscreen</string>
+
+    <!-- Long Press Home -->
+    <string name="long_press_home_title">Long-press tasto home</string>
+    <string name="long_press_home_summary">Numero di applicazioni recenti, etc.</string>
+    <string name="recent_apps_show_title">Mostra titolo Recenti</string>
+    <string name="recent_apps_num_title">Numero di applicazioni</string>
+    <string name="recent_apps_num_summary">Numero di applicazioni recenti da visualizzare alla pressione prolungata del tasto home</string>
+    <string name="dialog_recent_apps_num_title">Specifica numero di applicazioni recenti</string>
+    <string name="use_custom_app_title">Applicazioni personalizzate</string>
+    <string name="use_custom_app_summary">Visualizza applicazioni personalizzate al posto di quelle recenti</string>
+    <string name="select_custom_app_title">Seleziona applicazioni</string>
+    <string name="group_applications">Applicazioni</string>
+
+    <!-- Performance Settings -->
+    <string name="performance_settings_title">Impostazioni performance</string>
+    <string name="performance_settings_summary">Modifiche alle performance del dispositivo</string>
+
+    <!-- Performance Settings : Compcache -->
+    <string name="pref_compcache_title">Usa compcache</string>
+    <string name="pref_compcache_summary">Memoria compressa per maggior capacità virtuale (riavvio richiesto)</string>
+
+    <!-- Performance Settings : JIT Mode -->
+    <string name="pref_jit_mode_title">Usa JIT</string>
+    <string name="pref_jit_mode_summary">Usa compilatore Dalvik just-in-time (riavvio richiesto)</string>
+
+    <!-- Performance Settings : Dithering -->
+    <string name="pref_use_dithering_title">Abilita dithering</string>
+    <string name="pref_use_dithering_summary">Il dithering migliora la qualità dell\'immagine a scapito delle performance (riavvio richiesto)</string>
+
+    <!-- Performance Settings : VM Heap Size -->
+    <string name="pref_heapsize_title">Dimensione heap VM</string>
+    <string name="pref_heapsize_summary">Massima quantità di memoria per heap VM (riavvio richiesto)</string>
+
+    <!-- Performance Settings : Warning dialog -->
+    <string name="performance_settings_warning_title">WARNING: Dragons Ahead!</string>
+    <string name="performance_settings_warning">Queste opzioni modificheranno le performance del dispositivo, probabilmente anche peggiorandole. Sono incluse per sperimentazione e ti chiediamo di non inviare bug report se hai modificato i valori di default.</string>
+
+    <!-- Application Settings -->
+    <string name="application_settings_title">Impostazioni applicazioni</string>
+    <string name="application_settings_summary">Modifica diverse impostazioni riguardanti le applicazioni</string>
+
+    <!-- Application Settings : Move any app -->
+    <string name="pref_move_all_apps_title">Abilita spostamento app</string>
+    <string name="pref_move_all_apps_summary">Permette di spostare qualsiasi applicazione nella memoria esterna</string>
+
+    <!-- Application Settings : Install Location -->
+    <string name="pref_install_location_title">Luogo di installazione</string>
+    <string name="pref_install_location_summary">Seleziona dove vuoi che vengano installate le nuove applicazioni</string>
+
+    <!-- HapticTweaks -->
+    <string name="haptic_title">Modifiche feedback aptico</string>
+    <string name="haptic_summary">Scegli quando e con che intensità vuoi che intervenga il feedback aptico</string>
+
+    <string name="title_haptic_feedback">Feedback aptico</string>
+    <string name="summary_on_haptic_feedback">Usa feedback aptico alla pressione delle softkey e per certe interazioni con la UI</string>
+    <string name="summary_off_haptic_feedback">Nessun feedback aptico alla pressione delle softkey e per certe interazioni con la UI</string>
+
+    <string name="title_haptic_feedback_up">Feedback al rilascio</string>
+    <string name="summary_on_haptic_feedback_up">Usa feedback aptico al rilascio delle softkey e per certe interazioni con la UI</string>
+    <string name="summary_off_haptic_feedback_up">Nessun feedback aptico al rilascio delle softkey e per certe interazioni con la UI</string>
+
+    <string name="title_haptic_feedback_all">Feedback per selezioni</string>
+    <string name="summary_on_haptic_feedback_all">Usa feedback aptico per le selezioni sullo schermo</string>
+    <string name="summary_off_haptic_feedback_all">Nessun feedback aptico per le selezioni sullo schermo</string>
+
+    <string name="title_haptic_down_decider">Sequenza pressione</string>
+    <string name="title_haptic_up_decider">Sequenza rilascio</string>
+    <string name="title_haptic_long_decider">Sequenza pressione prol.</string>
+    <string name="title_haptic_tap_decider">Sequenza keypad</string>
+
+    <string name="title_haptic_menu">Aggiusta feedback</string>
+    <string name="title_haptic_notice">RIAVVIO RICHIESTO AFFINCHÈ LE MODIFICHE ABBIANO EFFETTO GLOBALMENTE</string>
+
+    <string name="haptic_delay_desc">ms Off Time</string>
+    <string name="haptic_vibe_desc">ms On Time</string>
+
+    <string name="haptic_down_description">Modifica valori aptici per la pressione dei tasti\n(Hardkey virtuali e certe interazioni UI.)</string>
+    <string name="haptic_up_description">Modifica valori aptici al rilascio dei tasti\n(Hardkey virtuali e certe interazioni UI.)</string>
+    <string name="haptic_long_description">Modifica valori aptici per la pressione prolungata.</string>
+    <string name="haptic_tap_description">Modifica valori aptici per la tastiera virtuale</string>
+
+    <string name="haptic_plus_minus_desc">Premi i pulsanti più o meno per aggiungere o togliere step alla sequenza.</string>
+
+    <string name="haptic_button_plus">+</string>
+    <string name="haptic_button_minus">-</string>
+
+    <string name="haptic_button_save">Salva</string>
+    <string name="haptic_button_test">Testa</string>
+    <string name="haptic_button_cancel">Cancella</string>
+    <string name="haptic_button_revert">Ripristina modifiche</string>
+    <string name="haptic_button_default">Carica default</string>
+
+    <string name="haptic_save_toast">Salvando valori aptici: </string>
+    <string name="haptic_cancel_toast">Valori aptici non modificati</string>
+    <string name="haptic_revert_toast">Ripristino ultimi valori</string>
+    <string name="haptic_default_toast">Caricamento valori di default</string>
+
+    <string name="general_title">Generale</string>
+
+    <!-- UI Settings : Power off prompt -->
+    <string name="pref_power_prompt_title">Power prompt</string>
+    <string name="pref_power_prompt_summary">Scegli se visualizzare il prompt di conferma per lo spegnimento e il riavvio</string>
+
+    <!-- UI Settings : Render effect -->
+    <string name="pref_render_effect_title">Effetto Render</string>
+    <string name="pref_render_effect_summary">Scegli che colori utilizzare per visualizzare le immagini sullo schermo (possibili risparmi energetici)</string>
+
+<string name="widget_name">Widget RenderFX</string>
+    <string name="renderfx_temp">RenderFX</string>
+        <string name="prefs_render_effect">Effetto Render</string>
+        <string name="notify_render_effect">Effetto render attivo</string>
+        <string name="add_widget">Aggiungi widget</string>
+
+        <!--  Widget Types -->
+        <string name="night">Night</string>
+        <string name="terminal">Term</string>
+        <string name="blue">Blu</string>
+        <string name="amber">Ambra</string>
+        <string name="salmon">Salmone</string>
+        <string name="fuscia">Fucsia</string>
+
+        <!-- Notification Bar Colors -->
+
+    <string name="title_notification_bar">Barra Notifiche</string>
+    <string name="title_custom_not_bar">Personalizza la barra delle notifiche</string>
+    <string name="summary_custom_not_bar_on">Stai usando colore e stile della barra notifiche personalizzati</string>
+    <string name="summary_custom_not_bar_off">Stai usando la barra notifiche CyanogenMod classica</string>
+    
+    <string name="title_not_bar_color_mask">Colore Barra</string>
+    <string name="summary_not_bar_color_mask">Nota: La Trasparenza (alpha) non verrà applicata</string>
+    <string name="title_custom_exp_not_bar">Barra scorrevole personalizzata</string>
+    <string name="summary_custom_exp_not_bar_on">Stai usando colore e stile della barra scorrevole personalizzati</string>
+    <string name="summary_custom_exp_not_bar_off">Stai usando la barra scorrevole CyanogenMod classica</string>
+    <string name="title_not_exp_bar_color_mask">Colore Barra scorrevole</string>
+    <string name="summary_not_exp_bar_color_mask">Scegli un colore da applicare agli elementi della barra scorrevole</string>
+
+    <!-- Expanded View Power Widget -->
+    <string name="title_widget_buttons">Expanded View Widget</string>
+    <string name="title_expanded_widget">Notification power widget</string>
+    <string name="summary_expanded_widget">Visualizza il widget per il risparmio energetico nell\'area delle notifiche</string>
+    <string name="title_expanded_hide_onchange">Ritira barra</string>
+    <string name="summary_expanded_hide_onchange">Ritira la barra scorrevole delle notifiche dopo aver premuto un tasto del widget</string>
+    <string name="expanded_color_mask">Colore indicatore</string>
+    <string name="title_widget_picker">Tasti del widget</string>
+    <string name="summary_widget_picker">Scegli i tasti da aggiungere al widget</string>
+    <string name="title_toggle_wifi">Wi-Fi</string>
+    <string name="title_toggle_bluetooth">Bluetooth</string>
+    <string name="title_toggle_gps">GPS</string>
+    <string name="title_toggle_sound">Audio</string>
+    <string name="title_toggle_brightness">Luminosità</string>
+    <string name="title_toggle_sync">Sync</string>
+    <string name="title_toggle_wifiap">Hotspot Wi-Fi</string>
+    <string name="title_toggle_screentimeout">Timeout Schermo</string>
+    <string name="title_toggle_mobiledata">Mobile data</string>
+    <string name="title_toggle_lockscreen">Lockscreen</string>
+    <string name="title_toggle_networkmode">2G/3G</string>
+    <string name="title_toggle_autorotate">Rotazione automatica</string>
+    <string name="title_toggle_airplane">Modalità aereo</string>
+    <string name="title_toggle_flashlight">Torcia LED</string>
+    <string name="title_toggle_sleep">Vai in sleep mode</string>
+    <string name="title_button_modes">Modalità di funzionamento dei tasti</string>
+    <string name="pref_brightness_mode_title">Mod. Luminosità</string>
+    <string name="pref_brightness_mode_summary">Scegli le modalità del tasto per la luminosità</string>
+    <string name="pref_network_mode_title">Mod. Rete</string>
+    <string name="pref_network_mode_summary">Scegli le modalità del tasto per la rete</string>
+    <string name="pref_screentimeout_mode_title">Mod. Timeout</string>
+    <string name="pref_screentimeout_mode_summary">Scegli le modalità del tasto per il timeout dello schermo</string>
+    <string name="pref_ring_mode_title">Mod. Audio</string>
+    <string name="pref_ring_mode_summary">Scegli le modalità del tasto per l\'audio</string>
+    <string name="pref_flash_mode_title">Mod. Torcia</string>
+    <string name="pref_flash_mode_summary">Scegli tra Normale e Forte / Death Ray(Evo)</string>
+    <string name="widget_max_buttons">6 è il numero massimo di tasti.</string>
+
+
+
+    <!-- Performance : Lock home memory -->
+    <string name="pref_lock_home_title">Forza home in memoria</string>
+    <string name="pref_lock_home_summary">Cerca di mantenere l\'applicazione home sempre in memoria</string>
+
+    <!-- Performance : Lock mms app in memory -->
+    <string name="pref_lock_mms_title">Forza app messaggi in memoria</string>
+    <string name="pref_lock_mms_summary">Attiva per non rischiare di perdere messaggi in entrata in condizioni di poca memoria disponibile</string>
+
+    <!-- Backlight -->
+    <string name="backlight_title">Retroilluminazione Automatica</string>
+    <string name="backlight_summary">Modifica livelli e filtri</string>
+    <string name="light_filter_title">Filtri sensore di luce</string>
+    <string name="light_filter_enabled_title">Attivo</string>
+    <string name="light_filter_enabled_summary">Applica filtro a media mobile per ridurre lo sfarfallio.</string>
+    <string name="light_filter_window_title">Lunghezza finestra</string>
+    <string name="light_filter_window_summary">Il valore filtrato è la media dei valori ottenuti tramite il sensore in questo intervallo di tempo.</string>
+    <string name="light_filter_reset_title">Soglia reset</string>
+    <string name="light_filter_reset_summary">Campioni che deviano di così tanto dalla media attuale resettano il filtro.</string>
+    <string name="light_filter_interval_title">Intervallo campione</string>
+    <string name="light_filter_interval_summary">Valori bassi migliorano la precisione ma utilizzano più CPU.</string>
+    <string name="light_levels_title">Livelli di luminosità</string>
+    <string name="light_levels_enabled_title">Usa personalizzati</string>
+    <string name="light_levels_dim_title">Liv. oscuramento display</string>
+    <string name="light_levels_dim_summary">Luminosità che oscura il display</string>
+    <string name="light_levels_editor_title">Modifica altri livelli...</string>
+    <string name="light_decrease_enabled_title">Diminuzione luce</string>
+    <string name="light_decrease_enabled_summary">Attiva per consentire di diminuire la luce. Usa isteresi per ridurre lo sfarfallio.</string>
+    <string name="light_decrease_hysteresis_title">Diminuisci isteresi</string>
+    <string name="light_decrease_hysteresis_summary">Scegli di quanto abbassare i livelli del sensore.</string>
+
+    <!-- Light sensor levels -->
+    <string name="ll_title">Livelli sensore</string>
+    <string name="ll_header_upper">Superiore</string>
+    <string name="ll_header_lower">Inferiore</string>
+    <string name="ll_header_lcd">Display</string>
+    <string name="ll_header_btn">Tasti</string>
+    <string name="ll_header_kb">Tastiera</string>
+    <string name="ll_lux">Sensore (filtrato / raw):</string>
+    <string name="ll_lcd">Display:</string>
+    <string name="ll_btn">Tasti:</string>
+    <string name="ll_kb">Tastiera:</string>
+    <string name="ll_disabled">disattivato</string>
+    <string name="ll_default">Carica default</string>
+    <string name="ll_save">Salva &amp; applica</string>
+    <string name="ll_reload">Ricarica attuali</string>
+    <string name="ll_bad_levels">I livelli devono essere crescenti</string>
+    <string name="ll_num_levels">Imposta numero livelli</string>
+
+    <!-- Sound -->
+    <string name="sound_title">Impostazioni audio</string>
+    <string name="sound_summary">Impostazioni audio e audio focus</string>
+    <string name="sound_notifications_focus_title">Focus Notifiche</string>
+    <string name="sound_notifications_focus_summary">L\'Audio focus fa in modo che durante una notifica venga diminuito il volume delle app compatibili.</string>
+    <string name="sound_to_speaker_title">Riproduci solo tramite speaker</string>
+    <string name="sound_notifications_title">Notifiche</string>
+    <string name="sound_rings_title">Suonerie</string>
+    <string name="sound_alarms_title">Allarmi</string>
+    <string name="sound_note_title">Nota</string>
+    <string name="sound_note_summary">Le seguenti impostazioni verranno applicate solo durante l\'utilizzo delle cuffie.</string>
+    <string name="sound_attenuation_title">Attenuazione volume</string>
+    <string name="sound_limitvol_title">Volume durante riproduzione musicale</string>
+    <string name="sound_notifications_attenuation_dialog">Attenuazione notifica</string>
+    <string name="sound_rings_attenuation_dialog">Attenuazione suoneria</string>
+    <string name="sound_alarms_attenuation_dialog">Attenuazione allarme</string>
+    <string name="sound_notifications_limitvol_dialog">Volume notifica</string>
+    <string name="sound_rings_limitvol_dialog">Volume suoneria</string>
+    <string name="sound_alarms_limitvol_dialog">Volume allarme</string>
+    <!-- Quiet hours -->
+    <string name="sound_category_quiet_hours_title">Ore di Quiete</string>
+    <string name="quiet_hours_enabled">Attiva ore di quiete</string>
+    <string name="quiet_hours_enabled_on">Verranno applicate le ore di quiete</string>
+    <string name="quiet_hours_enabled_off">Le notifiche verranno riprodotte normalmente</string>
+    <string name="quiet_hours_start">Inizio ore di quiete</string>
+    <string name="quiet_hours_start_summary">Imposta quando vuoi che inizino le ore di quiete</string>
+    <string name="quiet_hours_end">Fine ore di quiete</string>
+    <string name="quiet_hours_end_summary">Imposta quando vuoi che finiscano le ore di quiete</string>
+    <string name="quiet_hours_mute">Disattiva notifiche</string>
+    <string name="quiet_hours_mute_on">Non verrà riprodotto alcun suono</string>
+    <string name="quiet_hours_mute_off">I suoni verranno riprodotti normalmente</string>
+    <string name="quiet_hours_still">Disattiva vibrazione</string>
+    <string name="quiet_hours_still_on">Il dispositivo non vibrerà</string>
+    <string name="quiet_hours_still_off">Il dispositivo vibrerà normalmente</string>
+    <string name="quiet_hours_dim">Spegni LED</string>
+    <string name="quiet_hours_dim_on">Possibilmente il LED rimarrà spento</string>
+    <string name="quiet_hours_dim_off">Il LED pulserà normalmente</string>
+
+    <string name="cmstats_title">Statistiche anonime</string>
+    <string name="cmstats_summary">Aiuta a migliorare CM accettando l\'invio di statistiche di utilizo anonime</string>
+    <string name="user_defined_key1">Tasto Rapido 1</string>
+    <string name="user_defined_key2">Tasto Rapido 2</string>
+    <string name="user_defined_key3">Tasto Rapido 3</string>
+    <string name="user_defined_not_set">Non definito</string>
+
+    <!--  Lockscreen gesture strings -->
+    <string name="pref_lockscreen_title">Gesture nel lockscreen</string>
+    <string name="pref_lockscreen_gestures_enable_title">Attiva gesture</string>
+    <string name="pref_lockscreen_gestures_trail_title">Mostra traccia gesture</string>
+    <string name="pref_lockscreen_gestures_builder_title">Crea gesture</string>
+    <string name="pref_lockscreen_gestures_sensitivity_title">Sensibilità</string>
+    <string name="pref_lockscreen_gestures_color_title">Colore gesture</string>
+    <string name="label_create_gesture">Crea una gesture</string>
+    <string name="gestures_button_add">Aggiungi gesture</string>
+    <string name="gestures_button_discard">Annulla</string>
+    <string name="gestures_button_done">Fatto</string>
+    <string name="gestures_shortcut_picker_button_label">Assegna un collegamento o un\'attività a questa gesture</string>
+    <string name="gestures_error_missing_shortcut">Devi selezionare un\'azione per questa gesture!</string>
+    <string name="gestures_save_success">Gesture salvata in %s</string>
+    <string name="gestures_cancel_action">Cancella</string>
+    <string name="gestures_loading">Caricando gesture...</string>
+    <string name="gestures_empty">Nessuna gesture</string>
+    <string name="gestures_activity">Gesture</string>
+    <string name="gestures_delete">Elimina</string>
+    <string name="gestures_delete_success">Gesture eliminata</string>
+    <string name="gestures_error_loading">Problema nel caricare il file delle gesture.</string>
+    <string name="gestures_unlock_only">Sblocco telefono</string>
+    <string name="gestures_toggle_sound">Interruttore audio</string>
+    <string name="gestures_flashlight">Torcia</string>
+    <string name="pref_lockscreen_disable_unlock_tab">Disattiva slider di sblocco</string>
+    <string name="pref_lockscreen_disable_unlock_tab_summary">Nota: Perchè quest\'opzione sia disponibile devi aver prima abilitato lo sblocco tramite trackball, tasto menu o gesture</string>
+    <string name="gestures_explain_create_screen">Scegli un\'azione da eseguire (oppure seleziona Sblocco o Int. audio) e disegna una gesture sullo schermo.</string>
+</resources>

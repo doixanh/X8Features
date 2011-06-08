@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+            android:title="@string/haptic_title"
+            android:summary="@string/haptic_summary">
+        <CheckBoxPreference
+		android:key="haptic_feedback"
+		android:title="@string/title_haptic_feedback"
+		android:summaryOn="@string/summary_on_haptic_feedback"
+		android:summaryOff="@string/summary_off_haptic_feedback"/>
+	<CheckBoxPreference
+		android:key="haptic_feedback_up"
+		android:title="@string/title_haptic_feedback_up"
+		android:summaryOn="@string/summary_on_haptic_feedback_up"
+		android:summaryOff="@string/summary_off_haptic_feedback_up"
+		android:defaultValue="false" />
+	<CheckBoxPreference
+		android:key="haptic_feedback_all"
+		android:title="@string/title_haptic_feedback_all"
+		android:summaryOn="@string/summary_on_haptic_feedback_all"
+		android:summaryOff="@string/summary_off_haptic_feedback_all"
+		android:defaultValue="false" />
+	<Preference
+		android:key="haptic_down_decider"
+		android:title="@string/title_haptic_down_decider"
+		android:defaultValue="1" />
+	<Preference
+		android:key="haptic_up_decider"
+		android:title="@string/title_haptic_up_decider"
+		android:defaultValue="2" />
+	<Preference
+		android:key="haptic_long_decider"
+		android:title="@string/title_haptic_long_decider"
+		android:defaultValue="3" />
+	<Preference
+		android:key="haptic_tap_decider"
+		android:title="@string/title_haptic_tap_decider"
+		android:defaultValue="4" />
+
+</PreferenceScreen>

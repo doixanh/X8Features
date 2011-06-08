@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<cmparts>
+<battery_status_color_title>#ffffffff</battery_status_color_title>
+<clock_color>#ff000000</clock_color>
+<dbm_color>#ff000000</dbm_color>
+<date_color>#ff000000</date_color>
+<plmn_label_color>#ff000000</plmn_label_color>
+<spn_label_color>#ff000000</spn_label_color>
+<new_notifications_ticker_color>#ff000000</new_notifications_ticker_color>
+<notifications_count_color>#ffffffff</notifications_count_color>
+<no_notifications_color>#ffffffff</no_notifications_color>
+<clear_button_label_color>#ff000000</clear_button_label_color>
+<ongoing_notifications_color>#ffffffff</ongoing_notifications_color>
+<latest_notifications_color>#ffffffff</latest_notifications_color>
+<notifications_title_color>#ff000000</notifications_title_color>
+<notifications_text_color>#ff000000</notifications_text_color>
+<notifications_time_color>#ff000000</notifications_time_color>
+<battery_percentage_status_icon>0</battery_percentage_status_icon>
+<show_status_clock>1</show_status_clock>
+<show_status_dbm>0</show_status_dbm>
+<show_plmn_ls>1</show_plmn_ls>
+<show_spn_ls>1</show_spn_ls>
+<show_plmn_sb>1</show_plmn_sb>
+<show_spn_sb>1</show_spn_sb>
+<notif_bar_color>#ffffffff</notif_bar_color>
+<notif_bar_custom>0</notif_bar_custom>
+<notif_expanded_bar_color>#ffffffff</notif_expanded_bar_color>
+<notif_expanded_bar_custom>0</notif_expanded_bar_custom>
+<!--This last one is for HDPI devices only - the values are: 0:right, 1:left, 2:center
+	This is the ONLY place this value can be set -->
+<hdpi_battery_alignment>0</hdpi_battery_alignment>
+</cmparts>

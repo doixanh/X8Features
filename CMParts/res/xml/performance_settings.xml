@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:key="pref_compcache_size" android:dialogTitle="@string/pref_compcache_title"
+        android:title="@string/pref_compcache_title" android:summary="@string/pref_compcache_summary"
+        android:entries="@array/pref_compcache_size_entries" android:entryValues="@array/pref_compcache_size_values" />
+
+    <CheckBoxPreference android:key="pref_jit_mode"
+        android:title="@string/pref_jit_mode_title" android:summary="@string/pref_jit_mode_summary" />
+
+    <CheckBoxPreference android:key="pref_use_dithering"
+        android:title="@string/pref_use_dithering_title" android:summary="@string/pref_use_dithering_summary" />
+
+    <CheckBoxPreference android:key="pref_lock_home"
+        android:title="@string/pref_lock_home_title" android:summary="@string/pref_lock_home_summary" />
+
+    <CheckBoxPreference android:key="pref_lock_mms"
+        android:title="@string/pref_lock_mms_title" android:summary="@string/pref_lock_mms_summary" />
+
+    <ListPreference android:key="pref_heapsize" android:dialogTitle="@string/pref_heapsize_title"
+        android:title="@string/pref_heapsize_title" android:summary="@string/pref_heapsize_summary"
+        android:entries="@array/entries_heapsize" android:entryValues="@array/entries_heapsize" />
+
+</PreferenceScreen>

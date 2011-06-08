@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+
+<resources>
+    <string-array name="entries_install_location">
+        <item>Automàtic</item>
+        <item>Intern</item>
+        <item>Extern</item>
+    </string-array>
+
+    <string-array name="entries_render_effect">
+        <item>Sense efectes de render</item>
+        <item>Mode nocturn (vermell)</item>
+        <item>Terminal (verd)</item>
+        <item>Blau</item>
+        <item>Ambre</item>
+        <item>Salmó</item>
+        <item>Fúcsia</item>
+	    <item>Calibrat (N1)</item>
+	    <item>Calibrat (N1) Vermell</item>
+	    <item>Calibrat (N1) Fred</item>
+    </string-array>
+
+	<string-array name="render_entries">
+        <item>Mode nocturn (vermell)</item>
+        <item>Terminal (verd)</item>
+        <item>Blau</item>
+        <item>Ambre</item>
+        <item>Salmó</item>
+        <item>Fúcsia</item>
+	    <item>Calibrat (N1)</item>
+	    <item>Calibrat (N1) Vermell</item>
+	    <item>Calibrat (N1) Fred</item>
+	</string-array>
+
+    <string-array name="entries_trackball_colors">
+        <item>Verd</item>
+        <item>Blanc</item>
+        <item>Vermell</item>
+        <item>Blau</item>
+        <item>Groc</item>
+        <item>Cian</item>
+        <item>Magenta</item>
+        <item>Rosa</item>
+        <item>Taronja</item>
+        <item>Blau cel</item>
+	    <item>Aleatori</item>
+	    <item>Cap</item>
+    </string-array>
+
+	<string-array name="pref_trackball_blink_rate_entries">
+        <item>2 (Ràpid)</item>
+        <item>3</item>
+        <item>4 (Mitjà)</item>
+        <item>5</item>
+        <item>6 (Lent)</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_delay_entries">
+        <item>Immediatament</item>
+        <item>1s</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>
+        <item>30s</item>
+        <item>1m</item>
+        <item>5m</item>
+        <item>10m</item>
+        <item>30m</item>
+    </string-array>
+
+    <string-array name="pref_compcache_size_entries">
+        <item>Desactivat</item>
+        <item>10%</item>
+        <item>18% (per defecte)</item>
+        <item>26%</item>
+    </string-array>
+
+    <string-array name="entries_light_filter_reset">
+        <item>Desactivat</item>
+        <item>400 lux</item>
+        <item>500 lux</item>
+        <item>600 lux</item>
+        <item>700 lux</item>
+        <item>800 lux</item>
+        <item>900 lux</item>
+        <item>1000 lux</item>
+        <item>1500 lux</item>
+        <item>2000 lux</item>
+        <item>2500 lux</item>
+    </string-array>
+
+    <string-array name="entries_sound_limitvol">
+        <item>Configuració atenuada del sistema</item>
+        <item>Volum de la música (per defecte)</item>
+    </string-array>
+</resources>

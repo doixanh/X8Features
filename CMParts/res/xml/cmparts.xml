@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- FroyoBread Settings -->
+    <PreferenceScreen android:key="froyobread_settings"
+        android:title="@string/froyobread_settings_title" android:summary="@string/froyobread_settings_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.cmparts"
+            android:targetClass="com.cyanogenmod.cmparts.activities.FroyoBreadActivity" />
+    </PreferenceScreen>
+
+
+    <!-- Update Notifications -->
+    <PreferenceScreen android:key="updatenotify_settings"
+        android:title="@string/updatenotify_title" android:summary="@string/updatenotify_summary">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.updatenotify"
+            android:targetClass="com.cyanogenmod.updatenotify.MainActivity" />
+    </PreferenceScreen>
+    
+    <!-- Application Settings -->
+    <PreferenceScreen android:key="application_settings"
+        android:title="@string/application_settings_title" android:summary="@string/application_settings_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.cmparts"
+            android:targetClass="com.cyanogenmod.cmparts.activities.ApplicationActivity" />
+    </PreferenceScreen>
+    
+    <!-- Input Settings -->
+    <PreferenceScreen android:key="input_settings"
+        android:title="@string/input_settings_title" android:summary="@string/input_settings_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.cmparts"
+            android:targetClass="com.cyanogenmod.cmparts.activities.InputActivity" />
+    </PreferenceScreen>
+ 
+    <!-- Performance settings -->
+    <PreferenceScreen android:key="performance_settings"
+        android:title="@string/performance_settings_title" android:summary="@string/performance_settings_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.cmparts"
+            android:targetClass="com.cyanogenmod.cmparts.activities.PerformanceSettingsActivity" />
+    </PreferenceScreen>
+
+    <!-- Sound settings -->
+    <PreferenceScreen android:key="sound_settings"
+            android:title="@string/sound_title" android:summary="@string/sound_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.cmparts"
+            android:targetClass="com.cyanogenmod.cmparts.activities.SoundActivity" />
+    </PreferenceScreen>
+
+    <!-- UI Settings -->
+    <PreferenceScreen android:key="ui_settings"
+        android:title="@string/ui_title" android:summary="@string/ui_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.cmparts"
+            android:targetClass="com.cyanogenmod.cmparts.activities.UIActivity" />
+    </PreferenceScreen>
+
+<!-- Possible future Use: Pedlar
+    <PreferenceScreen android:key="battery_tester"
+        android:title="Test Battery" android:summary="Battery Drain Tester">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.cmparts"
+            android:targetClass="com.cyanogenmod.cmparts.activities.BatteryTester" />
+    </PreferenceScreen>
+-->
+
+    <!-- CMStats -->
+    <PreferenceScreen android:key="cmstats_settings"
+	    android:title="@string/cmstats_title" android:summary="@string/cmstats_summary">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.stats"
+            android:targetClass="com.cyanogenmod.stats.MainActivity" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

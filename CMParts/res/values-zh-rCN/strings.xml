@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Generic -->
+    <string name="app_name">CyanogenMod 设置</string>
+
+    <!-- User interface -->
+    <string name="ui_title">用户界面</string>
+    <string name="ui_summary">用户界面设置与微调</string>
+    <string name="ui_status_bar">状态栏选项</string>
+
+    <!-- User interface : orientation -->
+    <string name="ui_rotation_title">画面自动旋转可用角度</string>
+    <string name="pref_rotation_90_title">90 度</string>
+    <string name="pref_rotation_180_title">180 度</string>
+    <string name="pref_rotation_270_title">270 度</string>
+
+    <!-- User interface : LED Notifications -->
+    <string name="trackball_title">LED 通知</string>
+    <string name="trackball_summary">控制轨迹球和 LED 通知的颜色和闪烁频率</string>
+
+    <!-- User interface : WebView -->
+    <string name="ui_webview_title">网页视图</string>
+    <string name="pref_pinch_reflow_title">触摸放大后使内容自动换行</string>
+    <string name="pref_pinch_reflow_summary">通过多点触摸放大网页后立即使内容按窗口自动换行</string>
+
+    <!-- User interface : Overscroll -->
+    <string name="ui_overscroll_title">滚动越界</string>
+    <string name="pref_overscroll_title">打开滚动越界</string>
+    <string name="pref_overscroll_summary_on">可滚动对象超出屏幕并弹回</string>
+    <string name="pref_overscroll_summary_off">可滚动对象不能超出屏幕</string>
+    <string name="pref_overscroll_weight_title">越界程度</string>
+    <string name="pref_overscroll_weight_summary">选择可滚动对象的越界程度</string>
+
+    <!-- User interface : Lock Screen -->
+    <string name="ui_lockscreen_title">锁屏设置</string>
+    <string name="pref_lockscreen_delay_title">延迟</string>
+    <string name="pref_lockscreen_timeout_lock_delay">屏幕自动休眠时的延迟</string>
+    <string name="pref_lockscreen_screenoff_lock_delay">屏幕手动关闭时的延迟</string>
+    <string name="pref_lockscreen_timeout_lock_delay_summary">当屏幕超时自动休眠时，延迟多长时间后启用锁屏</string>
+    <string name="pref_lockscreen_screenoff_lock_delay_summary">当手动关闭屏幕时，延迟多长时间后启用锁屏</string>
+
+    <!-- Color Picker -->
+    <string name="title_color_picker">选择颜色</string>
+    <string name="msg_color_picker">点击中间的颜色进行确认。\n点击返回键取消。</string>
+
+    <!-- Status Bar -->
+    <string name="status_bar_title">状态栏</string>
+    <string name="status_bar_summary">状态栏微调选项</string>
+
+    <!-- Status Bar, Battery -->
+    <string name="battery_title">电池</string>
+    <string name="pref_battery_percentage_title">电量百分比</string>
+    <string name="pref_battery_percentage_summary">在状态栏中显示电量百分比</string>
+    <string name="battery_status_color_title">电量百分比颜色</string>
+
+    <!-- Status Bar, Clock -->
+    <string name="clock_title">时钟</string>
+    <string name="title_show_clock">显示时钟</string>
+    <string name="title_clock_color">时钟颜色</string>
+    <string name="clock_show_am_pm">使用 12 小时时钟使显示上下午</string>
+
+    <!-- Status Bar, dBm Signal -->
+    <string name="dbm_title">信号强度数值</string>
+    <string name="title_show_dbm">显示信号强度数值</string>
+    <string name="summary_on_show_dbm">在状态栏中显示信号强度数值</string>
+    <string name="summary_off_show_dbm">不在状态栏中显示信号强度数值</string>
+    <string name="title_hide_signal_dbm">隐藏信号强度图标</string>
+    <string name="summary_on_hide_signal_dbm">不显示信号强度图标，只显示数值</string>
+    <string name="summary_off_hide_signal_dbm">显示信号强度图标</string>
+    <string name="title_dbm_color">数值颜色</string>
+
+    <!-- Date and Provider -->
+    <string name="dp_title">日期与运营商</string>
+    <string name="dp_summary">日期与运营商显示微调</string>
+
+    <!-- Date and Provider, Date -->
+    <string name="date_title">日期</string>
+    <string name="title_date_color">日期颜色</string>
+
+    <!-- Date and Provider, PLMN -->
+    <string name="plmn_title">运营商名称</string>
+    <string name="title_show_plmn_ls">显示运营商名称 (锁屏)</string>
+    <string name="summary_on_show_plmn_ls">在设备锁定屏幕中显示运营商名称</string>
+    <string name="summary_off_show_plmn_ls">在设备锁定屏幕中不显示运营商名称</string>
+    <string name="title_show_plmn_sb">运营商名称 (状态栏)</string>
+    <string name="summary_on_show_plmn_sb">在状态栏中显示运营商名称</string>
+    <string name="summary_off_show_plmn_sb">在状态栏中不显示运营商名称</string>
+    <string name="title_plmn_label_color">运营商名称文字颜色</string>
+
+    <!-- Date and Provider, SPN -->
+    <string name="spn_title">服务供应商代号</string>
+    <string name="title_show_spn_ls">显示服务供应商代号 (锁屏)</string>
+    <string name="summary_on_show_spn_ls">在设备锁定屏幕中显示服务供应商代号</string>
+    <string name="summary_off_show_spn_ls">在设备锁定屏幕中不显示服务供应商代号</string>
+    <string name="title_show_spn_sb">显示服务供应商代号 (状态栏)</string>
+    <string name="summary_on_show_spn_sb">在状态栏中显示服务供应商代号</string>
+    <string name="summary_off_show_spn_sb">在状态栏中不显示服务供应商代号</string>
+    <string name="title_spn_label_color">服务供应商代号文字颜色</string>
+
+    <!-- Notifications -->
+    <string name="title_notifications_sb">状态栏通知</string>
+    <string name="title_notifications_color_tweaks">通知颜色</string>
+    <string name="summary_notifications_color_tweaks">状态栏中显示的各种通知的颜色</string>
+    <string name="title_notifications_ticker_color">通知弹出提示颜色</string>
+    <string name="title_notifications_count_color">通知数量颜色</string>
+    <string name="title_no_notifications_color">无通知文字颜色</string>
+    <string name="title_clear_button_label_color">清除通知文字颜色</string>
+    <string name="title_ongoing_notifications_color">正在进行通知标题颜色</string>
+    <string name="title_latest_notifications_color">最新通知标题颜色</string>
+    <string name="title_notifications_items">通知项目</string>
+    <string name="title_notifications_items_title">通知项目标题颜色</string>
+    <string name="title_notifications_items_text">通知项目文字颜色</string>
+    <string name="title_notifications_items_time">通知项目时间颜色</string>
+
+    <!-- User interface: Trackball notifcations -->
+    <string name="trackball_notifications_title">轨迹球通知颜色</string>
+    <string name="dialog_color_trackball">选择颜色</string>
+    <string name="dialog_blink_trackball">选择闪烁频率</string>
+    <string name="color_trackball_flash_title">闪烁颜色</string>
+        <string name="color_trackball_flash_summary">轨迹球闪烁的颜色</string>
+    <string name="color_trackball_custom_title">自定义颜色</string>
+        <string name="color_trackball_custom_summary">轨迹球闪烁自定义颜色</string>
+    <string name="color_trackball_blink_title">闪烁频率</string>
+        <string name="color_trackball_blink_summary">轨迹球闪烁的频率</string>
+    <string name="color_trackball_test_title">闪烁测试</string>
+        <string name="color_trackball_test_summary">测试闪烁效果</string>
+        <string name="dialog_clear_flash">清除闪烁</string>
+    <string name="trackball_advanced_title">高级</string>
+    <string name="pref_trackball_screen_title">总是闪动</string>
+    <string name="pref_trackball_screen_summary">轨迹球在屏幕开启时一直闪动</string>
+    <string name="pref_trackball_blend_title">混合通知</string>
+    <string name="pref_trackball_blend_summary">将多个通知的颜色混合起来，启用此选项将覆盖依次通知选项</string>
+    <string name="pref_trackball_sucess_title">依次通知</string>
+    <string name="pref_trackball_sucess_summary">依次闪动显示每个通知</string>
+    <string name="pref_trackball_random_title">随机颜色</string>
+    <string name="pref_trackball_random_summary">对所有通知使用随机颜色闪动 LED</string>
+    <string name="pref_trackball_order_title">顺序颜色</string>
+    <string name="pref_trackball_order_summary">按顺序使用颜色闪动 LED</string>
+    <string name="pref_trackball_reset_title">重置</string>
+    <string name="pref_trackball_reset_summary">重置所有的颜色与应用程序设置</string>
+    <string name="dialog_trackball_loading">正在载入...</string>
+    <string name="dialog_trackball_packagelist">正在载入应用程序列表</string>
+    <string name="trackball_category_dialog_text">请输入一个新的类别</string>
+    <string name="trackball_category_list_title">类别</string>
+    <string name="trackball_category_list_summary">选择类别</string>
+    <string name="trackball_category_screen">管理类别</string>
+    <string name="trackball_category_add_title">添加类别</string>
+    <string name="trackball_category_add_summary">向类别列表中添加一个新的类别</string>
+    <string name="trackball_category_remove_title">删除类别</string>
+    <string name="trackball_category_remove_summary">从类别列表中删除一个类别</string>
+    <string name="trackball_remove_default_toast">无法删除默认类别</string>
+    <string name="trackball_reset_all">重置所有的颜色与类别设置</string>
+    <string name="trackball_array_error">抱歉，发生了一个数组错误，该应用程序已经被强制列入其他类别。</string>
+
+    <!-- Trackball Settings : Warning dialog -->
+    <string name="notification_battery_warning_title">警告：可能会增加耗电量</string>
+    <string name="notification_battery_warning">测试显示本功能会每小时增加 3% 左右的耗电量。如果你发现在轨迹球闪动时耗电量有所增加，应该是本功能所导致的。如果您不想增加耗电量，请不要开启本功能。</string>
+
+	
+    <!-- Tweaks Extras -->
+    <string name="te_title">额外微调</string>
+    <string name="te_title_summary">用于界面微调的额外工具</string>
+    <string name="te_reset">重置</string>
+    <string name="title_reset_ui_tweaks_to_defaults">将界面设置重置为默认值</string>
+    <string name="te_xml">XML工具</string>
+    <string name="title_dialog_ui_interface">用户界面微调</string>
+    <string name="message_dialog_reset">是否将所有微调设置重置为默认值？重启后生效。</string>
+    <string name="reset_ui_success">用户界面微调设置已重置！重启后生效。</string>
+    <string name="message_dialog_export">请输入文件名。如果该文件名已存在，此操作将覆盖原有文件。</string>
+    <string name="xml_sdcard_unmounted">未安装 SD 卡！</string>
+    <string name="xml_write_error">写入 XML 时发生错误！</string>
+    <string name="xml_export_success">导出 XML 成功！</string>
+    <string name="message_dialog_import">是否导入界面颜色主题？重启后生效。</string>
+    <string name="xml_file_not_found">找不到 XML 文件！</string>
+    <string name="xml_io_exception">文件读取错误！</string>
+    <string name="xml_parse_error">解析 XML 时发生错误！</string>
+    <string name="xml_invalid_color">XML 中存在无效的颜色代码！</string>
+    <string name="xml_import_success">导入 XML 成功！重启后生效。</string>
+    <string name="xml_run_helper">正在运行设置助手</string>
+    <string name="title_apply_theme">选择主题</string>
+    <string name="summary_apply_theme">从预置主题或 SD 卡中保存的主题中选择</string>
+    <string name="title_save_theme">保存当前主题</string>
+    <string name="summary_save_theme">将当前颜色设置保存到 SD 卡</string>
+
+
+    <!-- Input Settings -->
+    <string name="input_settings_title">输入设置</string>
+    <string name="input_settings_summary">设备按键行为选项</string>
+    <string name="button_settings_title">按键设置</string>
+    <string name="lockscreen_settings_title">锁屏设置</string>
+    <string name="pref_lockscreen_music_controls_title">锁屏音乐播放控制按钮</string>
+    <string name="pref_lockscreen_music_controls_summary">在锁屏画面上显示音乐播放控制按钮</string>
+    <string name="pref_lockscreen_always_music_controls_title">总是显示音乐播放控制按钮</string>
+    <string name="pref_lockscreen_always_music_controls_summary">无论是否正在播放音乐，总是显示音乐播放控制按钮</string>
+	<string name="pref_trackball_wake_title">轨迹球唤醒</string>
+    <string name="pref_trackball_wake_summary">按下轨迹球可唤醒设备</string>
+    <string name="pref_trackball_unlock_title">轨迹球解锁</string>
+    <string name="pref_trackball_unlock_summary">按下轨迹球可解锁设备</string>
+    <string name="pref_menu_unlock_title">菜单键解锁</string>
+    <string name="pref_menu_unlock_summary">按下菜单键可解锁设备</string>
+    <string name="pref_lockscreen_quick_unlock_control_title">快速解锁</string>
+    <string name="pref_lockscreen_quick_unlock_control_summary">输入数字 PIN 或密码后无需按确定按钮即可解锁，按删除键重新输入。</string>
+
+	
+    <!-- Long Press Home -->
+    <string name="long_press_home_title">长按 Home 键设置</string>
+    <string name="long_press_home_summary">调整最近打开程序显示数量等设置</string>
+    <string name="recent_apps_show_title">显示最近打开程序名称</string>
+    <string name="recent_apps_num_title">最近打开程序数量</string>
+    <string name="recent_apps_num_summary">设置长按 Home 键打开最近程序列表中显示的程序数量</string>
+    <string name="dialog_recent_apps_num_title">设置最近打开程序数量</string>
+    <string name="use_custom_app_title">使用自定义程序</string>
+    <string name="use_custom_app_summary">启动自定义程序，而不是打开最近程序列表</string>
+    <string name="select_custom_app_title">选择自定义程序</string>
+    <string name="group_applications">应用程序</string>
+
+    <!-- Performance Settings -->
+    <string name="performance_settings_title">性能设置</string>
+    <string name="performance_settings_summary">设备性能微调</string>
+
+    <!-- Performance Settings : Compcache -->
+    <string name="pref_compcache_title">使用 Compcache</string>
+    <string name="pref_compcache_summary">压缩内存以增加虚拟容量 (需要重启)</string>
+
+    <!-- Performance Settings : JIT Mode -->
+    <string name="pref_jit_mode_title">使用 JIT</string>
+    <string name="pref_jit_mode_summary">使用 Dalvik 的 JIT (Just-In-Time) 编译器 (需要重启)</string>
+
+    <!-- Performance Settings : Dithering -->
+    <string name="pref_use_dithering_title">启用贴图插值抖动</string>
+    <string name="pref_use_dithering_summary">启用贴图插值抖动可以提高图像质量，但会影响性能 (需要重启)</string>
+
+    <!-- Performance Setting : VM Heap Size -->
+    <string name="pref_heapsize_title">虚拟机内存大小</string>
+    <string name="pref_heapsize_summary">设置每个虚拟机进程的可用内存最大值（需要重启）</string>
+
+	<!-- Performance Settings : Warning dialog -->
+    <string name="performance_settings_warning_title">警告：前面有怪兽！</string>
+    <string name="performance_settings_warning">这里的选项会改变系统的性能，这可能意味着会变得更差。它们只作实验用途，如果您更改过这里的设置，请不要向我们提交 bug 报告。</string>
+
+    <!-- Application Settings -->
+    <string name="application_settings_title">应用程序设置</string>
+    <string name="application_settings_summary">改变各种应用程序设置，例如安装位置</string>
+
+    <!-- Application Settings : Move any app -->
+    <string name="pref_move_all_apps_title">允许移动应用程序</string>
+    <string name="pref_move_all_apps_summary">允许将任何应用程序移动到 SD 卡</string>
+
+    <!-- Application Settings : Install Location -->
+    <string name="pref_install_location_title">安装位置</string>
+    <string name="pref_install_location_summary">选择新安装程序的安装位置</string>
+
+    <!-- HapticTweaks -->
+    <string name="haptic_title">振动反馈微调</string>
+    <string name="haptic_summary">调节振动反馈的发生条件和方式</string>
+
+    <string name="title_haptic_feedback">振动反馈</string>
+    <string name="summary_on_haptic_feedback">在软按键按下和部分界面操作时启用振动反馈</string>
+    <string name="summary_off_haptic_feedback">在软按键按下和部分界面操作时禁用振动反馈</string>
+
+    <string name="title_haptic_feedback_up">按键释放振动反馈</string>
+    <string name="summary_on_haptic_feedback_up">在松开软按键和部分界面操作时启用振动反馈</string>
+    <string name="summary_off_haptic_feedback_up">在松开软按键和部分界面操作时禁用振动反馈</string>
+
+    <string name="title_haptic_feedback_all">触摸屏振动反馈</string>
+    <string name="summary_on_haptic_feedback_all">在触摸屏进行操作时启用振动反馈</string>
+    <string name="summary_off_haptic_feedback_all">在触摸屏进行操作时禁用振动反馈</string>
+
+    <string name="title_haptic_down_decider">按键振动方式</string>
+    <string name="title_haptic_up_decider">按键释放振动方式</string>
+    <string name="title_haptic_long_decider">长按键振动方式</string>
+    <string name="title_haptic_tap_decider">屏幕键盘振动方式</string>
+
+    <string name="title_haptic_menu">振动调节</string>
+    <string name="title_haptic_notice">重启后才能使设置在全局生效</string>
+
+    <string name="haptic_delay_desc">毫秒 停止时间</string>
+    <string name="haptic_vibe_desc">毫秒 振动时间</string>
+
+    <string name="haptic_down_description">调节按下按键时的振动数值\n（虚拟硬键及部分界面操作）</string>
+    <string name="haptic_up_description">调节松开按键时的振动数值\n（虚拟硬键及大部分屏幕操作）</string>
+    <string name="haptic_long_description">调节长按按键时的振动数值</string>
+    <string name="haptic_tap_description">调节屏幕键盘的振动数值</string>
+
+    <string name="haptic_plus_minus_desc">请点击加号或减号按钮在序列中添加或删除步骤</string>
+
+    <string name="haptic_button_plus">+</string>
+    <string name="haptic_button_minus">-</string>
+
+    <string name="haptic_button_save">保存</string>
+    <string name="haptic_button_test">测试</string>
+    <string name="haptic_button_cancel">取消</string>
+    <string name="haptic_button_revert">撤销变更</string>
+    <string name="haptic_button_default">读取默认值</string>
+
+    <string name="haptic_save_toast">正在保存振动数值：</string>
+    <string name="haptic_cancel_toast">振动数值未更改</string>
+    <string name="haptic_revert_toast">正在恢复上次使用数值</string>
+    <string name="haptic_default_toast">正在恢复默认值</string>
+
+    <string name="general_title">通用设置</string>
+
+    <!-- UI Settings : Power off prompt -->
+    <string name="pref_power_prompt_title">关机提示</string>
+    <string name="pref_power_prompt_summary">选择在执行关机或重启的时候是否弹出确认提示</string>
+
+    <!-- UI Settings : Render effect -->
+    <string name="pref_render_effect_title">渲染效果</string>
+    <string name="pref_render_effect_summary">选择描绘屏幕图像时所使用的颜色系 (有可能降低耗电量)</string>
+
+    <string name="widget_name">渲染效果桌面部件</string>
+    <string name="renderfx_temp">渲染效果</string>
+    <string name="prefs_render_effect">渲染效果</string>
+    <string name="notify_render_effect">渲染效果开启</string>
+        <string name="add_widget">添加桌面部件</string>
+
+    <!--  Widget Types -->
+    <string name="night">夜间</string>
+    <string name="terminal">终端</string>
+    <string name="blue">蓝色</string>
+    <string name="amber">琥珀</string>
+    <string name="salmon">粉红</string>
+    <string name="fuscia">紫红</string>
+
+    <!-- Notification Bar Colors -->
+
+    <string name="title_notification_bar">通知栏</string>
+    <string name="title_custom_not_bar">自定义通知栏</string>
+    <string name="summary_custom_not_bar_on">使用自定义通知栏颜色和样式</string>
+    <string name="summary_custom_not_bar_off">使用传统 CyanogenMod 通知栏</string>
+    <string name="title_not_bar_color_mask">通知栏颜色</string>
+    <string name="summary_not_bar_color_mask">注意：透明度 (alpha) 设置目前无效</string>
+    <string name="title_custom_exp_not_bar">自定义下拉通知栏</string>
+    <string name="summary_custom_exp_not_bar_on">使用自定义扩展下拉通知栏颜色和样式</string>
+    <string name="summary_custom_exp_not_bar_off">使用传统 CyanogenMod 扩展下拉通知栏</string>
+    <string name="title_not_exp_bar_color_mask">下拉通知栏颜色</string>
+    <string name="summary_not_exp_bar_color_mask">选择颜色应用到下拉通知栏中的各个元素</string>
+
+
+    <!-- Expanded View Power Widget -->
+    <string name="title_widget_buttons">下拉通知栏集成插件</string>
+    <string name="title_expanded_widget">通知栏电源控制插件</string>
+    <string name="summary_expanded_widget">使用集成在下拉通知栏中的电源控制插件</string>
+    <string name="expanded_color_mask">指示灯颜色</string>
+    <string name="title_widget_picker">控制按钮</string>
+    <string name="summary_widget_picker">选取您需要的控制按钮</string>
+    <string name="title_toggle_wifi">切换 Wifi</string>
+    <string name="title_toggle_bluetooth">切换蓝牙</string>
+    <string name="title_toggle_gps">切换 GPS</string>
+    <string name="title_toggle_sound">切换声音</string>
+    <string name="title_toggle_brightness">切换亮度</string>
+    <string name="title_toggle_sync">切换同步</string>
+    <string name="title_toggle_wifiap">切换 Wifi 热点</string>
+    <string name="title_toggle_screentimeout">切换屏幕超时</string>
+    <string name="title_toggle_mobiledata">切换移动数据</string>
+    <string name="title_toggle_lockscreen">切换锁屏</string>
+    <string name="title_toggle_networkmode">切换 2G/3G</string>
+    <string name="title_toggle_autorotate">切换屏幕旋转</string>
+    <string name="title_toggle_airplane">切换飞行模式</string>
+    <string name="title_toggle_flashlight">切换 LED 手电筒</string>
+    <string name="title_toggle_sleep">睡眠模式</string>
+    <string name="title_button_modes">按钮切换模式</string>
+    <string name="pref_brightness_mode_title">亮度切换模式</string>
+    <string name="pref_brightness_mode_summary">选择亮度按钮的切换方式</string>
+    <string name="pref_network_mode_title">网络切换模式</string>
+    <string name="pref_network_mode_summary">选择网络按钮的切换方式</string>
+    <string name="pref_screentimeout_mode_title">屏幕超时切换模式</string>
+    <string name="pref_screentimeout_mode_summary">选择屏幕超时按钮的切换方式</string>
+    <string name="pref_ring_mode_title">声音切换模式</string>
+    <string name="pref_ring_mode_summary">选择声音按钮的切换方式</string>
+    <string name="pref_flash_mode_title">手电筒切换模式</string>
+    <string name="pref_flash_mode_summary">选择高亮度 / 超高亮度 (Evo)</string>
+    <string name="widget_max_buttons">您最多只能添加 6 个按钮</string>
+
+
+    <!-- Performance : Lock home memory -->
+    <string name="pref_lock_home_title">锁定桌面管理器的内存空间</string>
+    <string name="pref_lock_home_summary">在任何情况下试图防止当前的桌面管理器程序被系统从内存中清除</string>
+
+    <!-- Performance : Lock mms app in memory -->
+    <string name="pref_lock_mms_title">锁定消息程序的内存空间</string>
+    <string name="pref_lock_mms_summary">可以防止在内存不足的情况下丢失消息</string>
+
+    <!-- Backlight -->
+    <string name="backlight_title">自动亮度调节</string>
+    <string name="backlight_summary">调整亮度水平和传感器运算</string>
+    <string name="light_filter_title">光线传感器运算</string>
+    <string name="light_filter_enabled_title">启用</string>
+    <string name="light_filter_enabled_summary">对光线传感器取得的数据做移动平均运算，以减少频繁调节亮度引起的屏幕闪烁。</string>
+    <string name="light_filter_window_title">移动平均取值长度</string>
+    <string name="light_filter_window_summary">对该时间段内的光线传感器数据取平均值。</string>
+    <string name="light_filter_reset_title">重置阈值</string>
+    <string name="light_filter_reset_summary">如果光线传感器数据样本相对于当前平均值的变化量超过该阈值，则重置移动平均值的运算，以便光线剧烈变化的情况下可迅速反应。</string>
+    <string name="light_filter_interval_title">传感器采样间隔</string>
+    <string name="light_filter_interval_summary">间隔越短准确度越高，但也会消耗更多的 CPU 。</string>
+    <string name="light_levels_title">亮度水平</string>
+    <string name="light_levels_enabled_title">使用自定义设置</string>
+    <string name="light_levels_dim_title">屏幕变暗值</string>
+    <string name="light_levels_dim_summary">当使屏幕变暗时所使用的亮度水平值</string>
+    <string name="light_levels_editor_title">编辑其他值...</string>
+    <string name="light_decrease_enabled_title">允许降低亮度</string>
+    <string name="light_decrease_enabled_summary">开启该选项允许降低亮度，使用迟滞选项减少频繁调节亮度引起的屏幕闪烁。</string>
+    <string name="light_decrease_hysteresis_title">降低亮度迟滞</string>
+    <string name="light_decrease_hysteresis_summary">传感器数据降低一定水平后再降低屏幕亮度。</string>
+
+    <!-- Light sensor levels -->
+    <string name="ll_title">光线传感器取值</string>
+    <string name="ll_header_upper">上限</string>
+    <string name="ll_header_lower">下限</string>
+    <string name="ll_header_lcd">屏幕</string>
+    <string name="ll_header_btn">按钮</string>
+    <string name="ll_header_kb">键盘</string>
+    <string name="ll_lux">传感器 (运算后 / 原始):</string>
+    <string name="ll_lcd">屏幕：</string>
+    <string name="ll_btn">按钮：</string>
+    <string name="ll_kb">键盘：</string>
+    <string name="ll_disabled">关闭</string>
+    <string name="ll_default">读取默认值</string>
+    <string name="ll_save">保存并应用</string>
+    <string name="ll_reload">恢复当前值</string>
+    <string name="ll_bad_levels">取值必须逐渐增大</string>
+    <string name="ll_num_levels">设置亮度级别数量</string>
+
+    <!-- Sound -->
+    <string name="sound_title">声音设置</string>
+    <string name="sound_summary">声音和音频切入设置</string>
+    <string name="sound_notifications_focus_title">通知声音切入</string>
+    <string name="sound_notifications_focus_summary">向兼容此功能的程序发送声音切入请求，使其降低音量以便突出播放要切入的声音事件。</string>
+    <string name="sound_to_speaker_title">总是通过扬声器播放</string>
+    <string name="sound_notifications_title">通知</string>
+    <string name="sound_rings_title">铃声</string>
+    <string name="sound_alarms_title">闹钟</string>
+    <string name="sound_note_title">注意</string>
+    <string name="sound_note_summary">以下设定仅在使用耳机时有效。</string>
+    <string name="sound_attenuation_title">在设定音量基础上衰减</string>
+    <string name="sound_limitvol_title">正在播放音乐时的音量</string>
+    <string name="sound_notifications_attenuation_dialog">通知衰减</string>
+    <string name="sound_rings_attenuation_dialog">铃声衰减</string>
+    <string name="sound_alarms_attenuation_dialog">闹钟衰减</string>
+    <string name="sound_notifications_limitvol_dialog">通知音量</string>
+    <string name="sound_rings_limitvol_dialog">铃声音量</string>
+    <string name="sound_alarms_limitvol_dialog">闹钟音量</string>
+    <!-- Quiet hours -->
+    <string name="sound_category_quiet_hours_title">静音时间</string>
+    <string name="quiet_hours_enabled">启用静音时间</string>
+    <string name="quiet_hours_enabled_on">已启用静音时间</string>
+    <string name="quiet_hours_enabled_off">通知声音将正常播放</string>
+    <string name="quiet_hours_start">静音开始时间</string>
+    <string name="quiet_hours_start_summary">静音设定开始的时间</string>
+    <string name="quiet_hours_end">静音结束时间</string>
+    <string name="quiet_hours_end_summary">静音设定结束的时间</string>
+    <string name="quiet_hours_mute">通知静音</string>
+    <string name="quiet_hours_mute_on">不播放声音</string>
+    <string name="quiet_hours_mute_off">正常播放声音</string>
+    <string name="quiet_hours_still">关闭振动</string>
+    <string name="quiet_hours_still_on">手机不会振动</string>
+    <string name="quiet_hours_still_off">手机正常振动</string>
+    <string name="quiet_hours_dim">降低 LED 亮度</string>
+    <string name="quiet_hours_dim_on">LED 将在可能的情况下降低亮度</string>
+    <string name="quiet_hours_dim_off">LED 将使用正常亮度</string>
+
+    <string name="cmstats_title">匿名统计数据</string>
+    <string name="cmstats_summary">发送您的匿名使用统计数据以帮助我们改善 CyanogenMod</string>
+    <string name="user_defined_key1">快捷键 1</string>
+    <string name="user_defined_key2">快捷键 2</string>
+    <string name="user_defined_key3">快捷键 3</string>
+    <string name="user_defined_not_set">没有设置</string>
+
+    <!--  Lockscreen gesture strings -->
+    <string name="pref_lockscreen_title">锁屏手势</string>
+    <string name="pref_lockscreen_gestures_enable_title">使用锁屏手势</string>
+    <string name="pref_lockscreen_gestures_trail_title">显示手势路径</string>
+    <string name="pref_lockscreen_gestures_builder_title">建立手势</string>
+    <string name="pref_lockscreen_gestures_sensitivity_title">敏感度</string>
+    <string name="label_create_gesture">创建一个手势</string>
+    <string name="gestures_button_add">添加手势</string>
+    <string name="gestures_button_discard">舍弃</string>
+    <string name="gestures_button_done">完成</string>
+    <string name="gestures_shortcut_picker_button_label">为这个手势选择一个快捷方式或活动</string>
+    <string name="gestures_error_missing_shortcut">您必需为这个手势选择一个动作！</string>
+    <string name="gestures_save_success">手势保存到 %s</string>
+    <string name="gestures_cancel_action">取消</string>
+    <string name="gestures_loading">载入手势...</string>
+    <string name="gestures_empty">没有手势</string>
+    <string name="gestures_activity">手势</string>
+    <string name="gestures_delete">删除</string>
+    <string name="gestures_delete_success">手势已删除</string>
+    <string name="gestures_error_loading">手势文件操作发生问题。</string>
+
+</resources>

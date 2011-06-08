@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference android:key="pref_lockscreen_style" android:dialogTitle="@string/pref_lockscreen_style"
+        android:title="@string/pref_lockscreen_style_title" android:summary="@string/pref_lockscreen_style_summary"
+        android:entries="@array/entries_lockscreen_style" android:entryValues="@array/values_lockscreen_style" />
+
+    <CheckBoxPreference android:key="pref_lockscreen_hide_arrow"
+        android:title="@string/pref_lockscreen_hide_arrow_title"/>
+
+    <CheckBoxPreference android:key="pref_lockscreen_hide_clock"
+        android:title="@string/pref_lockscreen_hide_clock_title"/>
+
+    <CheckBoxPreference android:key="pref_led_disabled"
+        android:title="@string/pref_led_disabled_title" android:summary="@string/pref_led_disabled_summary"/>
+
+    <CheckBoxPreference android:key="pref_edge_glow"
+        android:title="@string/pref_edge_glow_title" android:summary="@string/pref_edge_glow_summary"/>
+
+</PreferenceScreen>

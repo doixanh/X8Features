@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   <PreferenceCategory android:title="@string/date_title">
+      <Preference android:key="date_color"
+         android:title="@string/title_date_color"
+         android:defaultValue="-16777216" />
+   </PreferenceCategory>
+   <PreferenceCategory android:title="@string/plmn_title">
+      <CheckBoxPreference android:key="show_plmn_ls"
+         android:title="@string/title_show_plmn_ls"
+         android:summaryOn="@string/summary_on_show_plmn_ls"
+         android:summaryOff="@string/summary_off_show_plmn_ls"
+         android:defaultValue="true" />
+      <CheckBoxPreference android:key="show_plmn_sb"
+         android:title="@string/title_show_plmn_sb"
+         android:summaryOn="@string/summary_on_show_plmn_sb"
+         android:summaryOff="@string/summary_off_show_plmn_sb"
+         android:defaultValue="true"
+         android:disableDependentsState="false" />
+      <Preference android:key="plmn_label_color"
+         android:title="@string/title_plmn_label_color"
+         android:defaultValue="-16777216"
+         android:dependency="show_plmn_sb" />
+   </PreferenceCategory>
+   <PreferenceCategory android:title="@string/spn_title">
+      <CheckBoxPreference android:key="show_spn_ls"
+         android:title="@string/title_show_spn_ls"
+         android:summaryOn="@string/summary_on_show_spn_ls"
+         android:summaryOff="@string/summary_off_show_spn_ls"
+         android:defaultValue="true" />
+      <CheckBoxPreference android:key="show_spn_sb"
+         android:title="@string/title_show_spn_sb"
+         android:summaryOn="@string/summary_on_show_spn_sb"
+         android:summaryOff="@string/summary_off_show_spn_sb"
+         android:defaultValue="true"
+         android:disableDependentsState="false" />
+      <Preference android:key="spn_label_color"
+         android:title="@string/title_spn_label_color"
+         android:defaultValue="-16777216"
+         android:dependency="show_spn_sb" />
+   </PreferenceCategory>
+</PreferenceScreen>

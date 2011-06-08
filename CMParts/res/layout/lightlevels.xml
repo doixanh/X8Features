@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@+id/ll_root" android:orientation="vertical">
+	<TableLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/ll_table_info"
+		android:paddingBottom="10dip">
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/ll_table_row_lux">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/ll_tw_lux_text"
+				android:text="@string/ll_lux" android:textStyle="bold" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/ll_tw_lux_value"
+				android:paddingLeft="20dp" />
+		</TableRow>
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/table_row_lcd">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/ll_tw_lcd_text"
+				android:text="@string/ll_lcd" android:textStyle="bold"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/ll_tw_lcd_value"
+				android:paddingLeft="20dp" />
+		</TableRow>
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/table_row_btn">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/ll_tw_btn_text"
+				android:text="@string/ll_btn" android:textStyle="bold"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/ll_tw_btn_value"
+				android:paddingLeft="20dp" />
+		</TableRow>
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/table_row_kb">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/ll_tw_kb_text"
+				android:text="@string/ll_kb" android:textStyle="bold"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/ll_tw_kb_value"
+				android:paddingLeft="20dp" />
+		</TableRow>
+	</TableLayout>
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/ll_scroll">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical">
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_gravity="center"
+				android:id="@+id/ll_btns" android:paddingBottom="10dp">
+				<Button android:text="@string/ll_reload" android:id="@+id/btn_reload"
+					android:layout_width="100dip" android:layout_height="wrap_content"
+					android:layout_gravity="center" />
+				<Button android:text="@string/ll_default" android:id="@+id/btn_default"
+					android:layout_width="100dip" android:layout_height="wrap_content"
+					android:layout_gravity="center" />
+				<Button android:text="@string/ll_save" android:id="@+id/btn_save"
+					android:layout_width="100dip" android:layout_height="wrap_content" />
+			</LinearLayout>
+			<TableLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/ll_table_config"
+				android:paddingBottom="10dip">
+				<TableRow android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/ll_table_row_headers"
+					android:layout_gravity="center_vertical|center_horizontal">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/ll_tw_header_lower_text"
+						android:textStyle="bold" android:text="@string/ll_header_lower"
+						android:paddingLeft="5dip" android:paddingRight="5dip"
+						android:layout_gravity="center"></TextView>
+					<TextView android:layout_height="wrap_content" android:id="@+id/ll_tw_header_upper"
+						android:textStyle="bold" android:text="@string/ll_header_upper"
+						android:paddingLeft="5dip" android:paddingRight="5dip"
+						android:layout_gravity="center" />
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textStyle="bold"
+						android:id="@+id/ll_tw_header_lcd" android:text="@string/ll_header_lcd"
+						android:paddingLeft="5dip" android:paddingRight="5dip"
+						android:layout_gravity="center" />
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textStyle="bold"
+						android:text="@string/ll_header_btn" android:id="@+id/ll_tw_header_btn"
+						android:paddingLeft="5dip" android:paddingRight="5dip"
+						android:layout_gravity="center" />
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textStyle="bold"
+						android:text="@string/ll_header_kb" android:id="@+id/ll_tw_header_kb"
+						android:paddingLeft="5dip" android:paddingRight="5dip"
+						android:layout_gravity="center" />
+				</TableRow>
+			</TableLayout>
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_gravity="center"
+				android:id="@+id/ll_num_levels">
+				<Button android:text="@string/ll_num_levels" android:id="@+id/btn_num_levels"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:layout_gravity="center" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

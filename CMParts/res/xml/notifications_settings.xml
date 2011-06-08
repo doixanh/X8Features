@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   <PreferenceCategory android:title="@string/title_notifications_sb">
+      <Preference
+         android:key="new_notifications_ticker_color"
+         android:title="@string/title_notifications_ticker_color"
+         android:defaultValue="-16777216" />
+      <Preference
+         android:key="notifications_count_color"
+         android:title="@string/title_notifications_count_color"
+         android:defaultValue="-1" />
+      <Preference
+         android:key="no_notifications_color"
+         android:title="@string/title_no_notifications_color"
+         android:defaultValue="-1" />
+      <Preference
+         android:key="clear_button_label_color"
+         android:title="@string/title_clear_button_label_color"
+         android:defaultValue="-16777216" />
+      <Preference
+         android:key="ongoing_notifications_color"
+         android:title="@string/title_ongoing_notifications_color"
+         android:defaultValue="-1" />
+      <Preference
+         android:key="latest_notifications_color"
+         android:title="@string/title_latest_notifications_color"
+         android:defaultValue="-1" />
+   </PreferenceCategory>
+   <PreferenceCategory android:title="@string/title_notifications_items">           
+      <Preference
+         android:key="notifications_title_color"
+         android:title="@string/title_notifications_items_title"
+         android:defaultValue="-16777216" />
+      <Preference
+         android:key="notifications_text_color"
+         android:title="@string/title_notifications_items_text"
+         android:defaultValue="-16777216" />
+      <Preference
+         android:key="notifications_time_color"
+         android:title="@string/title_notifications_items_time"
+         android:defaultValue="-16777216" />
+   </PreferenceCategory>
+   <PreferenceCategory android:title="@string/title_notification_bar">
+      <CheckBoxPreference android:key="custom_not_bar"
+         android:title="@string/title_custom_not_bar"
+         android:summaryOn="@string/summary_custom_not_bar_on"
+         android:summaryOff="@string/summary_custom_not_bar_off"
+         android:defaultValue="false" />
+      <Preference
+         android:key="not_bar_color_mask"
+         android:title="@string/title_not_bar_color_mask"
+         android:summary="@string/summary_not_bar_color_mask"
+         android:defaultValue="-1"
+         android:dependency="custom_not_bar" />
+      <CheckBoxPreference android:key="custom_exp_not_bar"
+         android:title="@string/title_custom_exp_not_bar"
+         android:summaryOn="@string/summary_custom_exp_not_bar_on"
+         android:summaryOff="@string/summary_custom_exp_not_bar_off"
+         android:defaultValue="false" />
+      <Preference
+         android:key="not_exp_bar_color_mask"
+         android:title="@string/title_not_exp_bar_color_mask"
+         android:summary="@string/summary_not_exp_bar_color_mask"
+         android:defaultValue="-1"
+         android:dependency="custom_exp_not_bar" />
+   </PreferenceCategory>
+</PreferenceScreen>

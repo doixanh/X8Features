@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   * Copyright (C) 2007 The Android Open Source Project
+   *
+   * Licensed under the Apache License, Version 2.0 (the "License");
+   * you may not use this file except in compliance with the License.
+   * You may obtain a copy of the License at
+   *
+   *      http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Unless required by applicable law or agreed to in writing, software
+   * distributed under the License is distributed on an "AS IS" BASIS,
+   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   * See the License for the specific language governing permissions and
+   * limitations under the License.
+  -->
+
+<resources>
+  <string-array name="entries_install_location">
+    <item>Automatisch</item>
+    <item>Intern</item>
+    <item>Extern</item>
+  </string-array>
+
+  <string-array name="entries_render_effect">
+    <item>Kein Render-Effekt</item>
+    <item>Nachtmodus (rot)</item>
+    <item>Terminal (grün)</item>
+    <item>Blau</item>
+    <item>Amber</item>
+    <item>Lachs</item>
+    <item>Fuchsia</item>
+    <item>Kalibriert (N1)</item>
+    <item>Kalibriert (N1) Schwachrot</item>
+    <item>Kalibriert (N1) Kalt</item>
+  </string-array>
+
+  <string-array name="entries_overscroll_weight">
+    <item>Sehr stark</item>
+    <item>Stark</item>
+    <item>Mittel</item>
+    <item>Schwach</item>
+    <item>Sehr schwach</item>
+  </string-array>
+
+  <string-array name="entries_trackball_colors">
+    <item>Grün</item>
+    <item>Weiß</item>
+    <item>Rot</item>
+    <item>Blau</item>
+    <item>Gelb</item>
+    <item>Cyan</item>
+    <item>Magenta</item>
+    <item>Pink</item>
+    <item>Orange</item>
+    <item>Hellblau</item>
+    <item>Zufällig</item>
+    <item>Keine</item>
+  </string-array>
+
+  <string-array name="pref_trackball_blink_rate_entries">
+    <item>2 (Schnell)</item>
+    <item>3</item>
+    <item>4 (Mittel)</item>
+    <item>5</item>
+    <item>6 (Langsam)</item>
+  </string-array>
+
+  <string-array name="pref_lockscreen_delay_entries">
+    <item>Sofort</item>
+    <item>1 Sekunde</item>
+    <item>5 Sekunden</item>
+    <item>10 Sekunden</item>
+    <item>15 Sekunden</item>
+    <item>30 Sekunden</item>
+    <item>1 Minute</item>
+    <item>5 Minuten</item>
+    <item>10 Minuten</item>
+    <item>30 Minuten</item>
+  </string-array>
+
+  <string-array name="pref_compcache_size_entries">
+    <item>Ausgeschaltet</item>
+    <item>10%</item>
+    <item>18% (Standard)</item>
+    <item>26%</item>
+  </string-array>
+
+  <string-array name="entries_light_filter_window">
+    <item>10 Sekunden</item>
+    <item>20 Sekunden</item>
+    <item>30 Sekunden</item>
+    <item>40 Sekunden</item>
+    <item>50 Sekunden</item>
+    <item>60 Sekunden</item>
+  </string-array>
+
+  <string-array name="entries_light_filter_reset">
+    <item>Ausgeschaltet</item>
+    <item>400 Lux</item>
+    <item>500 Lux</item>
+    <item>600 Lux</item>
+    <item>700 Lux</item>
+    <item>800 Lux</item>
+    <item>900 Lux</item>
+    <item>1000 Lux</item>
+    <item>1500 Lux</item>
+    <item>2000 Lux</item>
+    <item>2500 Lux</item>
+  </string-array>
+
+  <string-array name="entries_light_filter_interval">
+    <item>0,5 Sekunden</item>
+    <item>1 Sekunde</item>
+    <item>2 Sekunden</item>
+    <item>5 Sekunden</item>
+    <item>10 Sekunden</item>
+  </string-array>
+
+  <string-array name="entries_light_levels_dim">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>8</item>
+    <item>10</item>
+    <item>12</item>
+    <item>14</item>
+    <item>16</item>
+    <item>18</item>
+    <item>20 (Standard)</item>
+    <item>22</item>
+    <item>24</item>
+    <item>26</item>
+  </string-array>
+
+  <string-array name="entries_light_decrease_hysteresis">
+    <item>0 %</item>
+    <item>10 %</item>
+    <item>20 %</item>
+    <item>30 %</item>
+    <item>40 %</item>
+    <item>50 %</item>
+    <item>60 %</item>
+    <item>70 %</item>
+    <item>80 %</item>
+    <item>90 %</item>
+  </string-array>
+
+  <string-array name="entries_sound_attenuation">
+    <item>0 dB</item>
+    <item>4 dB</item>
+    <item>6 dB (Standard)</item>
+    <item>8 dB</item>
+    <item>10 dB</item>
+  </string-array>
+
+  <string-array name="entries_sound_limitvol">
+    <item>Abgeschwächte Voreinstellung</item>
+    <item>Musik-Lautstärke (Standard)</item>
+  </string-array>
+
+  <string-array name="entries_brightness_widget">
+    <item>Auto/Dunkel/40%/100%</item>
+    <item>Auto/Dunkel/25%/75%/100%</item>
+    <item>Auto/25%/100%</item>
+    <item>Dunkel/100%</item>
+  </string-array>
+
+  <string-array name="entries_network_widget">
+    <item>2G/3G+2G</item>
+    <item>Nur 2G/nur 3G</item>
+    <item>Nur 2G/nur 3G/3G+2G</item>
+  </string-array>
+
+  <string-array name="entries_screentimeout_widget">
+    <item>15Sek/1Min/5Min</item>
+    <item>30Sek/2Min/5Min</item>
+  </string-array>
+
+  <string-array name="entries_ring_widget">
+    <item>Töne+Vibration/ Vibration</item>
+    <item>Töne/Vibration</item>
+    <item>Töne/Lautlos</item>
+    <item>Töne+Vibration/ Vibration/Lautlos</item>
+    <item>Töne/Vibration/ Lautlos</item>
+  </string-array>
+
+  <string-array name="entries_flash_widget">
+    <item>Normal</item>
+    <item>Hoch</item>
+  </string-array>
+
+  <string-array name="pref_lockscreen_gestures_sensitivity_entries">
+    <item>1 (tolerant)</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12 (genau)</item>
+  </string-array>
+
+  <string-array name="pref_lockscreen_style_entries">
+	  <item>Tabs zum Schieben</item>
+	  <item>Rotierend</item>
+	</string-array>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gestures_explain_create_screen"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingBottom="10dip" />
+    <Button android:id="@+id/shortcut_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gestures_shortcut_picker_button_label"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:onClick="pickShortcut" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button android:id="@+id/unlock_pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gestures_unlock_only"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:onClick="pickUnlockOnly" />
+        <Button android:id="@+id/sound_pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gestures_toggle_sound"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:onClick="pickSoundOnly" />
+        <Button android:id="@+id/flashlight_pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gestures_flashlight"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:onClick="pickFlashlight" />
+    </LinearLayout>
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestures_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+
+        android:gestureStrokeType="multiple" />
+
+    <LinearLayout
+        style="@android:style/ButtonBar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:onClick="addGesture"
+            android:text="@string/gestures_button_done" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="cancelGesture"
+            android:text="@string/gestures_button_discard" />
+
+    </LinearLayout>
+
+</LinearLayout>

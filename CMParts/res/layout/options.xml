@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">  
+	<PreferenceCategory android:title="General options">	
+		<ListPreference
+			android:key="widget_render_effect"
+			android:title="@string/prefs_render_effect"
+			android:entries="@array/render_entries"
+			android:entryValues="@array/render_values"
+			/>        
+        <Preference
+			android:key="save_settings"
+			android:title="@string/add_widget"
+			/>			
+	</PreferenceCategory>
+</PreferenceScreen>  

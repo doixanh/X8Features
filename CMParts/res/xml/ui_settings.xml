@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- General settings -->
+    <PreferenceCategory android:key="general_category" android:title="@string/general_title">
+     
+        <!-- LED notifications -->
+        <PreferenceScreen android:key="trackball_notifications"
+            android:title="@string/trackball_title" android:summary="@string/trackball_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.TrackballNotificationActivity" />
+        </PreferenceScreen>
+        
+        <!-- Power prompt -->
+        <CheckBoxPreference android:key="power_dialog_prompt"
+            android:title="@string/pref_power_prompt_title"
+            android:summary="@string/pref_power_prompt_summary"
+            android:defaultValue="true" />
+
+        <!-- Render effect -->
+        <ListPreference android:key="pref_render_effect" android:dialogTitle="@string/pref_render_effect_title"
+            android:title="@string/pref_render_effect_title" android:summary="@string/pref_render_effect_summary"
+            android:entries="@array/entries_render_effect" android:entryValues="@array/values_render_effect" />
+
+        <!-- Backlight -->
+        <PreferenceScreen android:key="backlight_settings"
+            android:title="@string/backlight_title" android:summary="@string/backlight_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.BacklightActivity" />
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <!-- Status Bar Customization -->
+    <PreferenceCategory android:title="@string/ui_status_bar">
+
+        <!-- Status Bar -->
+        <PreferenceScreen android:key="status_bar_settings"
+            android:title="@string/status_bar_title" android:summary="@string/status_bar_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.StatusBarActivity" />
+        </PreferenceScreen>
+
+        <!-- Date and Provider -->
+        <PreferenceScreen android:key="date_provider_settings"
+            android:title="@string/dp_title" android:summary="@string/dp_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.DateProviderActivity" />
+        </PreferenceScreen>
+
+        <!-- Notification Colors -->
+        <PreferenceScreen android:key="notification_settings"
+            android:title="@string/title_notifications_color_tweaks"
+            android:summary="@string/summary_notifications_color_tweaks">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.NotificationsActivity" />
+        </PreferenceScreen>
+
+        <!-- Extras -->
+        <PreferenceScreen android:key="tweaks_extras"
+            android:title="@string/te_title" android:summary="@string/te_title_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.TweaksExtras" />
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <!-- Expanded View Power Widget -->
+   <PreferenceCategory android:title="@string/title_expanded_widget">
+      <CheckBoxPreference android:key="expanded_widget"
+         android:title="@string/title_expanded_widget"
+         android:summary="@string/summary_expanded_widget"
+         android:defaultValue="true" />
+      <CheckBoxPreference android:key="expanded_hide_onchange"
+         android:title="@string/title_expanded_hide_onchange"
+         android:summary="@string/summary_expanded_hide_onchange"
+         android:defaultValue="false"
+         android:dependency="expanded_widget" />
+      <Preference
+         android:key="expanded_color_mask"
+         android:title="@string/expanded_color_mask"
+         android:summary="@string/expanded_color_mask"
+         android:defaultValue="-1"
+         android:dependency="expanded_widget" />
+      <PreferenceScreen android:key="widget_picker"
+          android:title="@string/title_widget_picker" android:summary="@string/summary_widget_picker">
+          <intent android:action="android.intent.action.MAIN"
+              android:targetPackage="com.cyanogenmod.cmparts"
+              android:targetClass="com.cyanogenmod.cmparts.activities.WidgetActivity" />
+      </PreferenceScreen>
+   </PreferenceCategory>
+
+    
+    <!-- Rotation -->
+    <PreferenceCategory android:title="@string/ui_rotation_title">
+        <CheckBoxPreference android:key="pref_rotation_90"
+            android:title="@string/pref_rotation_90_title" />
+        <CheckBoxPreference android:key="pref_rotation_180"
+            android:title="@string/pref_rotation_180_title" />
+        <CheckBoxPreference android:key="pref_rotation_270"
+            android:title="@string/pref_rotation_270_title" />
+    </PreferenceCategory>
+
+    <!-- Webview Should this be moved to the browser? -->
+    <PreferenceCategory android:title="@string/ui_webview_title">
+        <CheckBoxPreference android:key="pref_pinch_reflow"
+            android:title="@string/pref_pinch_reflow_title"
+            android:summary="@string/pref_pinch_reflow_summary" />
+    </PreferenceCategory>
+
+    <!-- Overscrolling -->
+    <PreferenceCategory android:title="@string/ui_overscroll_title">
+        <CheckBoxPreference android:key="pref_overscroll"
+            android:title="@string/pref_overscroll_title"
+            android:summaryOn="@string/pref_overscroll_summary_on"
+            android:summaryOff="@string/pref_overscroll_summary_off" />
+        <ListPreference android:key="pref_overscroll_weight"
+            android:dependency="pref_overscroll" android:dialogTitle="@string/pref_overscroll_weight_title"
+            android:title="@string/pref_overscroll_weight_title" android:summary="@string/pref_overscroll_weight_summary"
+            android:entries="@array/entries_overscroll_weight" android:entryValues="@array/values_overscroll_weight" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/ui_lockscreen_title">
+        <!-- screen timeout delay -->
+        <ListPreference android:key="pref_lockscreen_timeout_delay" android:dialogTitle="@string/pref_lockscreen_delay_title"
+            android:title="@string/pref_lockscreen_timeout_lock_delay" android:summary="@string/pref_lockscreen_timeout_lock_delay_summary"
+        android:entries="@array/pref_lockscreen_delay_entries" android:entryValues="@array/pref_lockscreen_delay_values" />
+
+        <!-- screen off delay -->
+        <ListPreference android:key="pref_lockscreen_screenoff_delay" android:dialogTitle="@string/pref_lockscreen_delay_title"
+            android:title="@string/pref_lockscreen_screenoff_lock_delay" android:summary="@string/pref_lockscreen_screenoff_lock_delay_summary"
+        android:entries="@array/pref_lockscreen_delay_entries" android:entryValues="@array/pref_lockscreen_delay_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

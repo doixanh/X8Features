@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+
+<resources>
+
+    <string-array name="entries_install_location">
+        <item>自動</item>
+        <item>内蔵</item>
+        <item>外部</item>
+    </string-array>
+
+    <string-array name="entries_render_effect">
+        <item>エフェクトなし</item>
+        <item>ナイトモード (赤)</item>
+        <item>ターミナル (緑)</item>
+        <item>ブルー</item>
+        <item>アンバー</item>
+        <item>サーモン</item>
+        <item>フューシャ</item>
+        <item>調整済み(N1)</item>
+        <item>調整済み(N1) Low Red</item>
+        <item>調整済み(N1) Cold</item>
+    </string-array>
+
+    <string-array name="render_entries">
+        <item>ナイトモード (赤)</item>
+        <item>ターミナル (緑)</item>
+        <item>ブルー</item>
+        <item>アンバー</item>
+        <item>サーモン</item>
+        <item>フューシャ</item>
+        <item>調整済み(N1)</item>
+        <item>調整済み(N1) Low Red</item>
+        <item>調整済み(N1) Cold</item>
+    </string-array>
+
+    <string-array name="entries_overscroll_weight">
+        <item>かなり重い</item>
+        <item>重い</item>
+        <item>普通</item>
+        <item>軽い</item>
+        <item>かなり軽い</item>
+    </string-array>
+
+    <string-array name="entries_trackball_colors">
+        <item>緑</item>
+        <item>白</item>
+        <item>赤</item>
+        <item>青</item>
+        <item>黄</item>
+        <item>シアン</item>
+        <item>マゼンタ</item>
+        <item>ピンク</item>
+        <item>オレンジ</item>
+        <item>ライトブルー</item>
+        <item>ランダム</item>
+        <item>なし</item>
+    </string-array>
+
+    <string-array name="pref_trackball_blink_rate_entries">
+        <item>2 (速い)</item>
+        <item>3</item>
+        <item>4 (普通)</item>
+        <item>5</item>
+        <item>6 (遅い)</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_delay_entries">
+        <item>すぐ</item>
+        <item>1秒</item>
+        <item>5秒</item>
+        <item>10秒</item>
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分</item>
+        <item>5分</item>
+        <item>10分</item>
+        <item>30分</item>
+    </string-array>
+
+    <string-array name="pref_compcache_size_entries">
+        <item>無効</item>
+        <item>10%</item>
+        <item>18%(デフォルト)</item>
+        <item>26%</item>
+    </string-array>
+
+    <string-array name="entries_light_filter_window">
+        <item>10秒</item>
+        <item>20秒</item>
+        <item>30秒</item>
+        <item>40秒</item>
+        <item>50秒</item>
+        <item>60秒</item>
+    </string-array>
+
+    <string-array name="entries_light_filter_reset">
+        <item>無効にする</item>
+        <item>400ルクス</item>
+        <item>500ルクス</item>
+        <item>600ルクス</item>
+        <item>700ルクス</item>
+        <item>800ルクス</item>
+        <item>900ルクス</item>
+        <item>1000ルクス</item>
+        <item>1500ルクス</item>
+        <item>2000ルクス</item>
+        <item>2500ルクス</item>
+    </string-array>
+
+    <string-array name="entries_light_filter_interval">
+        <item>0.5秒</item>
+        <item>1秒</item>
+        <item>2秒</item>
+        <item>5秒</item>
+        <item>10秒</item>
+    </string-array>
+
+    <string-array name="entries_sound_attenuation">
+        <item>0 dB</item>
+        <item>4 dB</item>
+        <item>6 dB(デフォルト)</item>
+        <item>8 dB</item>
+        <item>10 dB</item>
+    </string-array>
+
+    <string-array name="entries_sound_limitvol">
+        <item>システム設定による減衰</item>
+        <item>音楽の音量(デフォルト)</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_gestures_sensitivity_entries">
+        <item>1 (最も広い)</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12 (最も狭い)</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_style_entries">
+        <item>スライディングタブ</item>
+        <item>ロータリー</item>
+    </string-array>
+
+</resources>
