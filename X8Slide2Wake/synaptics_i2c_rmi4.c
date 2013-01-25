@@ -35,11 +35,10 @@
 // dx: device and module info
 #define X8
 #define X10M_
-#define X10MP_
 #define DX_MODULE_NAME			"x8slide2wake"
 #define DX_MODULE_VER			"v001"
 
-// patch offsets
+// offsets
 #ifdef X8
 #define DEVICE_NAME				"X8"
 #define OFS_KALLSYMS_LOOKUP_NAME	0xC00B0654			// kallsyms_lookup_name
@@ -50,24 +49,31 @@
 #define OFS_KALLSYMS_LOOKUP_NAME	0xC00AF6D8			// kallsyms_lookup_name
 #endif
 
-#ifdef X10MP
-#define DEVICE_NAME				"X10 mini pro"
-#define OFS_KALLSYMS_LOOKUP_NAME	0xC00B09F0			// kallsyms_lookup_name
-#endif
+// consts
+#define Y_RANGE					200
+#define FROM_X					400
+#define TO_X					1200
+#define REVERSE_THRESHOLD		-10
 
+// useful macros
 #define define_func(type, name, params)		typedef type (*name##_def)(params); \
 						static name##_def name##_dx;
 #define lookup_func(name)			name##_dx = (void*) kallsyms_lookup_name_dx(#name)
 #define define_var(type, name)			static type * name##_dx;
 #define lookup_var(name)			name##_dx = (typeof(name##_dx)) kallsyms_lookup_name_dx(#name)
 
+// kernel related things
 define_func(unsigned long, kallsyms_lookup_name, const char *name)
 define_var(unsigned int *, kbd_input_dev)
 
-static struct workqueue_struct *exec_wq;
-static struct work_struct exec_work;
-static int s2w_generated;
-static int screen_on;
+// misc vars
+static struct workqueue_struct *s2w_wake_wq;
+static struct work_struct s2w_wake_work;
+static int s2w_generated = 0;
+static int s2w_screen_on = 1;
+static int s2w_in_area_prev = 0;
+static int s2w_ignore_touch = 0;
+static int s2w_x_prev = -1;
 
 /* Product firmware specific defines, hence the MACROs and register-load function */
 #define F01_RMI_QUERY00_MANUFACT_ID(x)		(unsigned char)(x.f01_RMI.query + 0)
@@ -391,6 +397,9 @@ static void synaptics_2D_data_handler(struct synaptics_ts_data *ts)
 {
 	int ret;
 	int i;
+	int mid_y;
+	int in_area = 0;
+	int delta_x = 0;
 	uint8_t finger_state;
 	uint8_t finger_state_mask;
 	uint8_t pkt_offset;
@@ -457,17 +466,41 @@ static void synaptics_2D_data_handler(struct synaptics_ts_data *ts)
 		pkt_offset += NBR_OF_2D_DATA_REGS_PER_FINGER;
 	}
 
-	DX_DBG(printk(KERN_INFO "[dx] %s: x=%4d, y=%4d\n", __FUNCTION__, f_data[0].x, f_data[0].y);)
-	
 	if (f_data[0].z == 0 && f_data[0].w == 0) {		// untouched?
 		DX_DBG(printk(KERN_INFO "%s: untouched\n", __FUNCTION__);)
 		s2w_generated = 0;
+		s2w_ignore_touch = 0;
+		s2w_x_prev = -1;
+	}
+	else {
+		if (!s2w_screen_on && !s2w_ignore_touch && !s2w_generated) {
+			// detect slide gesture
+			mid_y = ts->info_2D.max_y / 2;
+			if (s2w_x_prev < 0) {
+				s2w_x_prev = f_data[0].x;
+				if (s2w_x_prev > FROM_X) {
+					s2w_ignore_touch = 1;
+				}
+			}
+			delta_x = f_data[0].x - s2w_x_prev;
+			in_area = (f_data[0].y < mid_y + Y_RANGE && f_data[0].y > mid_y - Y_RANGE);// && (f_data[0].x > FROM_X && f_data[0].y < TO_X);
+			
+			if ((!in_area && s2w_in_area_prev) || delta_x < REVERSE_THRESHOLD) {
+				// skip this touch
+				s2w_ignore_touch = 1;
+			}
+			
+			if (!s2w_ignore_touch && f_data[0].x > TO_X) {
+				queue_work(s2w_wake_wq, &s2w_wake_work);
+				s2w_generated = 1;
+			}
+			s2w_x_prev = f_data[0].x;
+		}
 	}
 	
-	if (f_data[0].x == 0 && f_data[0].y == 0 && s2w_generated == 0 && !screen_on) {
-		queue_work(exec_wq, &exec_work);
-		s2w_generated = 1;
-	}
+	DX_DBG(printk(KERN_INFO "[dx] %s: x=%4d, y=%4d, deltax=%d, in_area_prev=%d, in_area=%d, ignore_touch=%d\n", __FUNCTION__, f_data[0].x, f_data[0].y, delta_x, in_area, s2w_in_area_prev, s2w_ignore_touch);)
+	
+	s2w_in_area_prev = in_area;
 
 	/* press- or release to be masked out on finger_0. */
 	finger_state_mask = 0x01;
@@ -1089,7 +1122,7 @@ static int synaptics_ts_suspend(struct i2c_client *client, pm_message_t mesg)
 	int ret;
 	struct synaptics_ts_data *ts = i2c_get_clientdata(client);
 	
-	screen_on = 0;
+	s2w_screen_on = 0;
 	return 0;
 
 	if (ts->use_irq)
@@ -1125,7 +1158,7 @@ static int synaptics_ts_resume(struct i2c_client *client)
 	int ret;
 	struct synaptics_ts_data *ts = i2c_get_clientdata(client);
 
-	screen_on = 1;
+	s2w_screen_on = 1;
 	return 0;
 	
 	if (ts->power) {
@@ -1195,10 +1228,10 @@ static int __devinit synaptics_ts_init(void)
 	lookup_var(kbd_input_dev);
 	
 	// workqueue for exec.
-	exec_wq = create_singlethread_workqueue(DX_MODULE_NAME "workqueue");
+	s2w_wake_wq = create_singlethread_workqueue(DX_MODULE_NAME "workqueue");
 	printk(KERN_INFO DX_MODULE_NAME": initialized workqueue\n");	
 	
-	INIT_WORK(&exec_work, dx_wake_device);
+	INIT_WORK(&s2w_wake_work, dx_wake_device);
 	printk(KERN_INFO DX_MODULE_NAME": initialized work\n");	
 	
 	other = driver_find(SYNAPTICS_I2C_RMI_NAME, &i2c_bus_type);
