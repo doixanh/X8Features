@@ -36,12 +36,12 @@
 #define X8
 #define X10M_
 #define DX_MODULE_NAME			"x8slide2wake"
-#define DX_MODULE_VER			"v001"
+#define DX_MODULE_VER			"v002"
 
 // offsets
 #ifdef X8
 #define DEVICE_NAME				"X8"
-#define OFS_KALLSYMS_LOOKUP_NAME	0xC00B0654			// kallsyms_lookup_name
+#define OFS_KALLSYMS_LOOKUP_NAME	"C00B0654"			// kallsyms_lookup_name
 #endif
 
 #ifdef X10M
@@ -61,8 +61,12 @@
 #define lookup_func(name)			name##_dx = (void*) kallsyms_lookup_name_dx(#name)
 #define define_var(type, name)			static type * name##_dx;
 #define lookup_var(name)			name##_dx = (typeof(name##_dx)) kallsyms_lookup_name_dx(#name)
+#define DX_DBG(x)
 
 // kernel related things
+static char *s2w_addr = OFS_KALLSYMS_LOOKUP_NAME;
+module_param(s2w_addr, charp, S_IRUGO);
+static unsigned int kallsyms_lookup_name_address;
 define_func(unsigned long, kallsyms_lookup_name, const char *name)
 define_var(unsigned int *, kbd_input_dev)
 
@@ -196,13 +200,58 @@ struct synaptics_ts_data {
 	struct rmi4_2D_packet pkt_2D;
 };
 
+struct HexMapping {
+	char chr;
+	int value;
+};
+
+static struct HexMapping HexMap[22] = {
+	{'0', 0}, {'1', 1},
+	{'2', 2}, {'3', 3},
+	{'4', 4}, {'5', 5},
+	{'6', 6}, {'7', 7},
+	{'8', 8}, {'9', 9},
+	{'A', 10}, {'B', 11},
+	{'C', 12}, {'D', 13},
+	{'E', 14}, {'F', 15},
+	{'a', 10}, {'b', 11},
+	{'c', 12}, {'d', 13},
+	{'e', 14}, {'f', 15}};
+
 #ifdef CONFIG_HAS_EARLYSUSPEND
 static void synaptics_ts_early_suspend(struct early_suspend *h);
 static void synaptics_ts_late_resume(struct early_suspend *h);
 #endif
 
 #define SYNA_DBG(x)	
-#define DX_DBG(x)	x
+
+
+// hex to int
+int _httoi(const char *value) {
+	char *s;
+	int result;
+	int i;
+	bool firsttime;
+
+	result = 0;
+	memcpy(&s, &value, 4);
+	firsttime = true;
+	while (*s != '\0') {
+		bool found = false;
+		for (i = 0; i < 22; i++) {
+			if (*s == HexMap[i].chr) {
+				if (!firsttime) result <<= 4;
+				result |= HexMap[i].value;
+				found = true;
+				break;
+			}
+		}
+		if (!found) break;
+		s++;
+		firsttime = false;
+  	}
+	return result;
+}
 
 static int synaptics_load_rmi4_func_regs
 	(struct i2c_client *client, struct rmi4_func_base_addr *rmi4_func)
@@ -1224,7 +1273,10 @@ static int __devinit synaptics_ts_init(void)
 	printk(KERN_INFO DX_MODULE_NAME": module " DX_MODULE_VER " loaded. Build target : " DEVICE_NAME "\n");	
 	s2w_generated = 0;
 	
-	kallsyms_lookup_name_dx = (void*) OFS_KALLSYMS_LOOKUP_NAME;
+	kallsyms_lookup_name_address = _httoi(s2w_addr);
+	printk(KERN_INFO DX_MODULE_NAME": s2w_addr=%X\n", kallsyms_lookup_name_address);	
+	
+	kallsyms_lookup_name_dx = (void*) kallsyms_lookup_name_address;
 	lookup_var(kbd_input_dev);
 	
 	// workqueue for exec.
